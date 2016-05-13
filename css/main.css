@@ -1,0 +1,27 @@
+body {
+  background-color: #ecf0f1;
+}
+
+.btn {
+  border-radius: 2px;
+}
+
+.font-white {
+  color: white;
+}
+
+.cta {
+  background-color: #fff;
+  border: 2px solid #e74c3c;
+  border-radius: 3px;
+  color: #e74c3c;
+  display: inline-block;
+  font-size: 1.3em;
+  margin: 10px 0;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.form-inline label {
+  display: block;
+}
