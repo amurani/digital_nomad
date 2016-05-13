@@ -5,15 +5,15 @@ session_start();
         return isset($_SESSION['userID']);
     }
 
-    function confirm_logged_in(){
-
-       if (!logged_in()){
-         $url = get_base_url()."/login.php";
-           session_write_close();
-           header("Location: ".$url);
-           exit();
-       }
+  function get_base_url() {
+    $base_url = "http://localhost/digital_nomad/";
+    if (gethostname() == "Kevins-MacBook-Pro.local") {
+      $base_url = "http://localhost:8000/digital_nomad/";
     }
+
+    return $base_url;
+  }
+
 
 function redirect_to($location){
     if ($location != NULL){
@@ -21,6 +21,16 @@ function redirect_to($location){
     exit;
     }
 }
+
+
+function confirm_logged_in(){
+   if (!logged_in()){
+     $url = get_base_url()."login.php";
+       session_write_close();
+       redirect_to($url);
+   }
+}
+
 
 function trackOnlineUsers(){
     global $connection;

@@ -1,6 +1,6 @@
 <?php
-include "includes/globals.php";
 include "includes/session.php";
+include "includes/globals.php";
 include "includes/db.php";
 
 if (isset($_POST['submit'])){
@@ -24,18 +24,20 @@ if (isset($_POST['submit'])){
     }
 
     $row = mysqli_fetch_assoc($result);
-
+    
+    $dbuserID = $row['id'];
     $dbusername = $row['username'];
     $dbpassword = $row['password'];
 
     //compare the credentials
     if (strcasecmp($username, $dbusername) == 0 && $password == $dbpassword){
         //login successful, set session
-        $_SESSION['userID'] = $userID;
+        $_SESSION['userID'] = $dbuserID;
+
         if (gethostname() == "Kevins-MacBook-Pro.local") {
-          $url = get_base_url()."/trip.php";
+          $url = get_base_url()."trip.php";
         } else {
-          $url = get_base_url()."/trip.php";
+          $url = get_base_url()."trip.php";
         }
         redirect_to($url);
 
