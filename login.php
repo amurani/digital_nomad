@@ -1,4 +1,6 @@
-<?php include "includes/db.php";
+<?php 
+include "includes/session.php";
+include "includes/db.php";
 
 if (isset($_POST['submit'])){
     //form credentials have been submitted
@@ -26,7 +28,24 @@ if (isset($_POST['submit'])){
     $dbpassword = $row['password'];
     
     //compare the credentials
-    if 
+    if (strcasecmp($username, $dbusername) == 0 && $password == $dbpassword){
+        //login successful, set session
+        $_SESSION['userID'] = $userID;
+        
+        $url = "http://localhost/digital_nomad/trip.php";
+        redirect_to($url);
+        
+    } else {
+        //login not successful
+        $errorMessage = "Login was not successful! Please try again.";
+        $errorMessage .= " Make sure you use your first name as Username and phone number as Password.";
+    }
+    
+        if (isset($_GET['logout']) && $_GET['logout'] == 1){
+            $logout_message = "You are now logged out.<br /><b>Please log in to continue.</b>";
+            $username = "";
+            $username = "";
+        }
 }
 
 ?>
@@ -41,7 +60,16 @@ if (isset($_POST['submit'])){
 
 </head>
 <body>
+<?php
 
+    if (isset($errorMessage)){
+        echo "<p>" . $errorMessage . "</p>";
+        if (isset($logout_message)){
+            echo "<p>" . $logout_message . "</p>";
+        }
+    }
+    
+?>
 <div class="login">
   <div class="login-triangle"></div>
   
