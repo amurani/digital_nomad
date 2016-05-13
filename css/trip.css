@@ -58,7 +58,19 @@
   height: 150px;
   width: 150px;
 }
+
 #listed-properties .listed-property .property-content {
   padding: 0 10px;
   margin-left: 150px;
+}
+
+#listed-properties .loading {
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+}
+
+
+.avialable-room-details {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
 }

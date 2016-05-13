@@ -2,14 +2,47 @@ body {
   background-color: #ecf0f1;
 }
 
+/*Typography*/
+.title {
+  color: #e74c3c;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.dashed {
+  border-bottom: 2px dashed #566d85;
+}
+
+/*Color*/
+  .font-white {
+    color: white;
+  }
+
+  .font-red {
+    color: #e74c3c;
+  }
+
+  .font-green {
+    color: #2ecc71;
+  }
+
+/*Size*/
+  .font-big {
+    font-size: large;
+  }
+
+/*Spacing*/
+.padd-0 {
+  padding: 0;
+}
+
+/* Buttons */
 .btn {
   border-radius: 2px;
 }
 
-.font-white {
-  color: white;
-}
-
+/* Links */
 .cta {
   background-color: #fff;
   border: 2px solid #e74c3c;
@@ -22,6 +55,12 @@ body {
   text-decoration: none;
 }
 
+/*Forms*/
 .form-inline label {
   display: block;
+}
+
+/*Modals*/
+.modal-content {
+  border-radius: 2px;
 }
