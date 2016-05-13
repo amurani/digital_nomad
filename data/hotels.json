@@ -1,0 +1,1412 @@
+{
+	"city_ufi": null,
+	"cc1": "ke",
+	"city_name": "Nairobi",
+	"lc": "en",
+	"dest_id": "-2258072",
+	"nr_hotels": "300",
+	"type": "ci",
+	"dest_type": "city",
+	"longitude": "36.820465087890625",
+	"rtl": 0,
+	"name": "Nairobi",
+	"country": "Kenya",
+	"latitude": "-1.292715072631836",
+	"region": "Nairobi",
+	"hotels": [{
+		"class": "5",
+		"commission": 0,
+		"exact_class": "5.0",
+		"pagename": "intercontinental-nairobi",
+		"name": "InterContinental Nairobi",
+		"checkout": {
+			"to": "12:00",
+			"from": ""
+		},
+		"hoteltype_id": "14",
+		"review_score": 7.7,
+		"book_domestic_without_cc_details": "0",
+		"languagecode": "en",
+		"contractchain_id": "286",
+		"class_is_estimated": 0,
+		"maxrate": 518.4,
+		"location": {
+			"latitude": "-1.2883817048592556",
+			"longitude": "36.81942880153656"
+		},
+		"hotel_id": "324110",
+		"district": "",
+		"currencycode": "USD",
+		"city": "Nairobi",
+		"url": "http://www.booking.com/hotel/ke/intercontinental-nairobi.html",
+		"max_rooms_in_reservation": "6",
+		"created": "2011-07-29 13:46:49",
+		"preferred": "1",
+		"address": "City Hall Way",
+		"checkin": {
+			"to": "",
+			"from": "14:00"
+		},
+		"review_nr": "153",
+		"minrate": 160.7,
+		"city_id": "-2258072",
+		"max_persons_in_reservation": "0",
+		"zip": "00200",
+		"ranking": "1549295",
+		"countrycode": "ke",
+		"nr_rooms": "380",
+		"is_closed": 0,
+		"rooms": [{
+			"roomtype": "Suite",
+			"max_price": "453.6",
+			"min_price": "295.49",
+			"roomtype_id": "5",
+			"max_persons": "2",
+			"bookable": 1,
+			"room_id": "32411001",
+			"hotel_id": "324110",
+			"bedding": {
+				"beds": [{
+					"amount": "2",
+					"type": "Single bed(s)"
+				}, {
+					"type": "Extra-large double bed(s) (Super-king size)",
+					"amount": "1"
+				}]
+			},
+			"ranking": "7"
+		}, {
+			"ranking": "1",
+			"bedding": {
+				"beds": [{
+					"type": "Extra-large double bed(s) (Super-king size)",
+					"amount": "2"
+				}]
+			},
+			"hotel_id": "324110",
+			"room_id": "32411002",
+			"bookable": 0,
+			"max_persons": "2",
+			"roomtype_id": "9",
+			"min_price": "0",
+			"max_price": "0",
+			"roomtype": "Double"
+		}, {
+			"room_id": "32411003",
+			"bookable": 1,
+			"ranking": "3",
+			"bedding": {
+				"beds": [{
+					"type": "Extra-large double bed(s) (Super-king size)",
+					"amount": "1"
+				}, {
+					"type": "Sofa bed(s)",
+					"amount": "1"
+				}]
+			},
+			"hotel_id": "324110",
+			"min_price": "233.28",
+			"max_price": "375.84",
+			"roomtype": "Double",
+			"max_persons": "2",
+			"roomtype_id": "9"
+		}, {
+			"max_price": "304.56",
+			"min_price": "191.81",
+			"roomtype": "Double",
+			"max_persons": "2",
+			"roomtype_id": "9",
+			"room_id": "32411004",
+			"bookable": 1,
+			"ranking": "2",
+			"hotel_id": "324110",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			}
+		}, {
+			"roomtype": "Twin",
+			"min_price": "160.7",
+			"max_price": "285.12",
+			"roomtype_id": "8",
+			"max_persons": "2",
+			"bookable": 1,
+			"room_id": "32411005",
+			"bedding": {
+				"beds": [{
+					"amount": "2",
+					"type": "Single bed(s)"
+				}]
+			},
+			"hotel_id": "324110",
+			"ranking": "4"
+		}, {
+			"roomtype_id": "9",
+			"max_persons": "2",
+			"roomtype": "Double",
+			"min_price": "0",
+			"max_price": "0",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Large bed(s) (King size)"
+				}]
+			},
+			"hotel_id": "324110",
+			"ranking": "5",
+			"room_id": "32411006",
+			"bookable": 0
+		}, {
+			"min_price": "160.7",
+			"max_price": "285.12",
+			"roomtype": "Double",
+			"max_persons": "2",
+			"roomtype_id": "9",
+			"room_id": "32411007",
+			"bookable": 1,
+			"ranking": "6",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"hotel_id": "324110"
+		}, {
+			"hotel_id": "324110",
+			"bedding": {
+				"beds": [{
+					"type": "Extra-large double bed(s) (Super-king size)",
+					"amount": "1"
+				}]
+			},
+			"ranking": "0",
+			"bookable": 1,
+			"room_id": "32411008",
+			"roomtype_id": "5",
+			"max_persons": "2",
+			"roomtype": "Suite",
+			"max_price": "518.4",
+			"min_price": "347.33"
+		}],
+		"photos": [{
+			"hotel_id": "324110",
+			"url_square60": "http://aff.bstatic.com/images/hotel/square60/567/56760119.jpg",
+			"photo_id": "56760119",
+			"url_original": "http://aff.bstatic.com/images/hotel/max500/567/56760119.jpg",
+			"url_max300": "http://aff.bstatic.com/images/hotel/max300/567/56760119.jpg"
+		}]
+	}, {
+		"exact_class": "4.0",
+		"commission": 0,
+		"class": "4",
+		"name": "Crowne Plaza Nairobi",
+		"pagename": "crowne-plaza-nairobi",
+		"hoteltype_id": "14",
+		"checkout": {
+			"to": "11:00",
+			"from": ""
+		},
+		"languagecode": "en",
+		"book_domestic_without_cc_details": "0",
+		"review_score": 7.7,
+		"class_is_estimated": 0,
+		"contractchain_id": "286",
+		"location": {
+			"latitude": "-1.3003439861377757",
+			"longitude": "36.81585609912872"
+		},
+		"maxrate": 750,
+		"district": "",
+		"hotel_id": "360252",
+		"created": "2011-12-30 13:15:22",
+		"max_rooms_in_reservation": "6",
+		"url": "http://www.booking.com/hotel/ke/crowne-plaza-nairobi.html",
+		"city": "Nairobi",
+		"currencycode": "USD",
+		"minrate": 135,
+		"checkin": {
+			"from": "14:00",
+			"to": ""
+		},
+		"review_nr": "52",
+		"address": "Kenya Road, Upper Hill",
+		"preferred": "1",
+		"city_id": "-2258072",
+		"max_persons_in_reservation": "0",
+		"zip": "00100",
+		"ranking": "1550890",
+		"is_closed": 0,
+		"nr_rooms": "162",
+		"countrycode": "ke",
+		"rooms": [{
+			"max_price": "750",
+			"min_price": "576",
+			"roomtype": "Suite",
+			"max_persons": "2",
+			"roomtype_id": "5",
+			"room_id": "36025201",
+			"bookable": 1,
+			"ranking": "8",
+			"hotel_id": "360252",
+			"bedding": {
+				"beds": [{
+					"type": "Double bed(s)",
+					"amount": "1"
+				}]
+			}
+		}, {
+			"room_id": "36025202",
+			"bookable": 1,
+			"ranking": "2",
+			"hotel_id": "360252",
+			"bedding": {
+				"beds": [{
+					"amount": "2",
+					"type": "Double bed(s)"
+				}]
+			},
+			"max_price": "250",
+			"min_price": "135",
+			"roomtype": "Double",
+			"max_persons": "2",
+			"roomtype_id": "9"
+		}, {
+			"ranking": "3",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"hotel_id": "360252",
+			"room_id": "36025203",
+			"bookable": 1,
+			"max_persons": "2",
+			"roomtype_id": "9",
+			"min_price": "216",
+			"max_price": "362",
+			"roomtype": "Double"
+		}, {
+			"max_persons": "2",
+			"roomtype_id": "9",
+			"min_price": "153",
+			"max_price": "292",
+			"roomtype": "Double",
+			"ranking": "6",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Large bed(s) (King size)"
+				}]
+			},
+			"hotel_id": "360252",
+			"bookable": 1,
+			"room_id": "36025204"
+		}, {
+			"roomtype": "Double",
+			"min_price": "153",
+			"max_price": "294.333",
+			"roomtype_id": "9",
+			"max_persons": "2",
+			"bookable": 1,
+			"room_id": "36025205",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Large bed(s) (King size)"
+				}]
+			},
+			"hotel_id": "360252",
+			"ranking": "5"
+		}, {
+			"ranking": "7",
+			"hotel_id": "360252",
+			"bedding": {
+				"beds": [{
+					"type": "Large bed(s) (King size)",
+					"amount": "1"
+				}]
+			},
+			"room_id": "36025206",
+			"bookable": 1,
+			"max_persons": "2",
+			"roomtype_id": "5",
+			"max_price": "600",
+			"min_price": "424",
+			"roomtype": "Suite"
+		}, {
+			"roomtype": "Double",
+			"max_price": "275.333",
+			"min_price": "179.222",
+			"roomtype_id": "9",
+			"max_persons": "2",
+			"bookable": 1,
+			"room_id": "36025207",
+			"hotel_id": "360252",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"ranking": "4"
+		}, {
+			"max_price": "274.333",
+			"min_price": "135",
+			"roomtype": "Double",
+			"max_persons": "2",
+			"roomtype_id": "9",
+			"bookable": 1,
+			"room_id": "36025208",
+			"ranking": "1",
+			"hotel_id": "360252",
+			"bedding": {
+				"beds": [{
+					"type": "Double bed(s)",
+					"amount": "1"
+				}]
+			}
+		}],
+		"photos": [{
+			"url_square60": "http://aff.bstatic.com/images/hotel/square60/623/62373006.jpg",
+			"hotel_id": "360252",
+			"url_original": "http://aff.bstatic.com/images/hotel/max500/623/62373006.jpg",
+			"url_max300": "http://aff.bstatic.com/images/hotel/max300/623/62373006.jpg",
+			"photo_id": "62373006"
+		}]
+	}, {
+		"district": "",
+		"hotel_id": "385482",
+		"location": {
+			"longitude": "36.81432455778122",
+			"latitude": "-1.287183060254504"
+		},
+		"maxrate": 665,
+		"class_is_estimated": 0,
+		"contractchain_id": "",
+		"languagecode": "en",
+		"book_domestic_without_cc_details": "0",
+		"review_score": 8.7,
+		"hoteltype_id": "14",
+		"checkout": {
+			"from": "",
+			"to": "11:00"
+		},
+		"name": "Nairobi Serena Hotel",
+		"pagename": "nairobi-serena",
+		"exact_class": "5.0",
+		"commission": 0,
+		"class": "5",
+		"is_closed": 0,
+		"nr_rooms": "183",
+		"countrycode": "ke",
+		"ranking": "1551029",
+		"zip": "00100",
+		"max_persons_in_reservation": "0",
+		"city_id": "-2258072",
+		"minrate": 215.5,
+		"checkin": {
+			"from": "14:00",
+			"to": ""
+		},
+		"review_nr": "156",
+		"address": "Kenyatta Avenue,",
+		"preferred": "1",
+		"created": "2012-04-05 12:48:03",
+		"max_rooms_in_reservation": "0",
+		"url": "http://www.booking.com/hotel/ke/nairobi-serena.html",
+		"city": "Nairobi",
+		"currencycode": "USD",
+		"rooms": [{
+			"max_persons": "2",
+			"roomtype_id": "9",
+			"max_price": "356.15",
+			"min_price": "215.5",
+			"roomtype": "Double",
+			"ranking": "0",
+			"hotel_id": "385482",
+			"bedding": {
+				"beds": [{
+					"type": "Large bed(s) (King size)",
+					"amount": "1"
+				}]
+			},
+			"bookable": 1,
+			"room_id": "38548201"
+		}, {
+			"max_persons": "2",
+			"roomtype_id": "9",
+			"min_price": "315",
+			"max_price": "321.167",
+			"roomtype": "Double",
+			"ranking": "0",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Double bed(s)"
+				}]
+			},
+			"hotel_id": "385482",
+			"room_id": "38548202",
+			"bookable": 1
+		}, {
+			"room_id": "38548203",
+			"bookable": 1,
+			"ranking": "0",
+			"hotel_id": "385482",
+			"bedding": {
+				"beds": [{
+					"type": "Large bed(s) (King size)",
+					"amount": "1"
+				}]
+			},
+			"max_price": "439.5",
+			"min_price": "430",
+			"roomtype": "Suite",
+			"max_persons": "2",
+			"roomtype_id": "5"
+		}, {
+			"hotel_id": "385482",
+			"bedding": {
+				"beds": [{
+					"type": "Large bed(s) (King size)",
+					"amount": "1"
+				}]
+			},
+			"ranking": "0",
+			"room_id": "38548204",
+			"bookable": 1,
+			"roomtype_id": "5",
+			"max_persons": "2",
+			"roomtype": "Suite",
+			"max_price": "669.5",
+			"min_price": "665"
+		}],
+		"photos": [{
+			"photo_id": "40224655",
+			"url_max300": "http://aff.bstatic.com/images/hotel/max300/402/40224655.jpg",
+			"url_original": "http://aff.bstatic.com/images/hotel/max500/402/40224655.jpg",
+			"hotel_id": "385482",
+			"url_square60": "http://aff.bstatic.com/images/hotel/square60/402/40224655.jpg"
+		}]
+	}, {
+		"contractchain_id": "",
+		"class_is_estimated": 0,
+		"hotel_id": "422969",
+		"district": "",
+		"maxrate": 554,
+		"location": {
+			"longitude": "36.8229304254055",
+			"latitude": "-1.2841700888967673"
+		},
+		"pagename": "sarova-stanley",
+		"name": "Sarova Stanley",
+		"class": "5",
+		"commission": 0,
+		"exact_class": "5.0",
+		"review_score": 8.6,
+		"languagecode": "en",
+		"book_domestic_without_cc_details": "0",
+		"checkout": {
+			"to": "10:00",
+			"from": ""
+		},
+		"hoteltype_id": "14",
+		"zip": "00100",
+		"countrycode": "ke",
+		"nr_rooms": "217",
+		"is_closed": 0,
+		"ranking": "1552822",
+		"preferred": "1",
+		"address": "Corner of Kimathi Street and Kenyatta Avenue",
+		"review_nr": "269",
+		"checkin": {
+			"to": "",
+			"from": "12:00"
+		},
+		"minrate": 182.75,
+		"currencycode": "USD",
+		"city": "Nairobi",
+		"url": "http://www.booking.com/hotel/ke/sarova-stanley.html",
+		"max_rooms_in_reservation": "0",
+		"created": "2012-08-07 14:27:47",
+		"max_persons_in_reservation": "0",
+		"city_id": "-2258072",
+		"rooms": [{
+			"min_price": "182.75",
+			"max_price": "281",
+			"roomtype": "Twin/Double",
+			"max_persons": "2",
+			"roomtype_id": "24",
+			"bookable": 1,
+			"room_id": "42296901",
+			"ranking": "1",
+			"bedding": {
+				"beds": [{
+					"amount": "2",
+					"type": "Single bed(s)"
+				}, {
+					"type": "Double bed(s)",
+					"amount": "1"
+				}]
+			},
+			"hotel_id": "422969"
+		}, {
+			"hotel_id": "422969",
+			"bedding": {
+				"beds": [{
+					"amount": "2",
+					"type": "Single bed(s)"
+				}, {
+					"amount": "1",
+					"type": "Double bed(s)"
+				}]
+			},
+			"ranking": "2",
+			"bookable": 1,
+			"room_id": "42296902",
+			"roomtype_id": "24",
+			"max_persons": "2",
+			"roomtype": "Twin/Double",
+			"max_price": "395.714",
+			"min_price": "220"
+		}, {
+			"roomtype_id": "5",
+			"max_persons": "2",
+			"roomtype": "Suite",
+			"min_price": "480",
+			"max_price": "492.857",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"hotel_id": "422969",
+			"ranking": "3",
+			"bookable": 1,
+			"room_id": "42296903"
+		}, {
+			"roomtype_id": "5",
+			"max_persons": "2",
+			"roomtype": "Suite",
+			"min_price": "554",
+			"max_price": "554",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"hotel_id": "422969",
+			"ranking": "4",
+			"bookable": 1,
+			"room_id": "42296904"
+		}],
+		"photos": [{
+			"photo_id": "35645241",
+			"url_original": "http://aff.bstatic.com/images/hotel/max500/356/35645241.jpg",
+			"url_max300": "http://aff.bstatic.com/images/hotel/max300/356/35645241.jpg",
+			"hotel_id": "422969",
+			"url_square60": "http://aff.bstatic.com/images/hotel/square60/356/35645241.jpg"
+		}]
+	}, {
+		"exact_class": "5.0",
+		"commission": 0,
+		"class": "5",
+		"name": "Villa Rosa Kempinski",
+		"pagename": "villa-rosa-kempinski",
+		"hoteltype_id": "14",
+		"checkout": {
+			"from": "12:00",
+			"to": "12:30"
+		},
+		"book_domestic_without_cc_details": "0",
+		"languagecode": "en",
+		"review_score": 8.8,
+		"class_is_estimated": 0,
+		"contractchain_id": "",
+		"location": {
+			"longitude": "36.80868923664093",
+			"latitude": "-1.2717105727953575"
+		},
+		"maxrate": 1279.25,
+		"district": "",
+		"hotel_id": "622736",
+		"created": "2013-07-22 16:19:46",
+		"max_rooms_in_reservation": "0",
+		"url": "http://www.booking.com/hotel/ke/villa-rosa-kempinski.html",
+		"city": "Nairobi",
+		"currencycode": "USD",
+		"minrate": 225,
+		"review_nr": "103",
+		"checkin": {
+			"to": "",
+			"from": "14:00"
+		},
+		"preferred": "1",
+		"address": "Cnr Chiromo Lane and Waiyaki Way",
+		"city_id": "-2258072",
+		"max_persons_in_reservation": "0",
+		"zip": "00800",
+		"ranking": "1552012",
+		"is_closed": 0,
+		"nr_rooms": "200",
+		"countrycode": "ke",
+		"rooms": [{
+			"hotel_id": "622736",
+			"bedding": {
+				"beds": [{
+					"type": "Single bed(s)",
+					"amount": "2"
+				}, {
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"ranking": "0",
+			"bookable": 1,
+			"room_id": "62273601",
+			"roomtype_id": "24",
+			"max_persons": "2",
+			"roomtype": "Twin/Double",
+			"max_price": "584.25",
+			"min_price": "255"
+		}, {
+			"bookable": 1,
+			"room_id": "62273602",
+			"ranking": "0",
+			"hotel_id": "622736",
+			"bedding": {
+				"beds": [{
+					"type": "Single bed(s)",
+					"amount": "2"
+				}, {
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"max_price": "354.25",
+			"min_price": "225",
+			"roomtype": "Twin/Double",
+			"max_persons": "2",
+			"roomtype_id": "24"
+		}, {
+			"roomtype": "Double",
+			"max_price": "614.25",
+			"min_price": "285",
+			"roomtype_id": "9",
+			"max_persons": "2",
+			"bookable": 1,
+			"room_id": "62273603",
+			"hotel_id": "622736",
+			"bedding": {
+				"beds": [{
+					"type": "Extra-large double bed(s) (Super-king size)",
+					"amount": "1"
+				}]
+			},
+			"ranking": "0"
+		}, {
+			"hotel_id": "622736",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"ranking": "0",
+			"room_id": "62273604",
+			"bookable": 1,
+			"roomtype_id": "9",
+			"max_persons": "2",
+			"roomtype": "Double",
+			"max_price": "634.25",
+			"min_price": "305"
+		}, {
+			"max_persons": "2",
+			"roomtype_id": "5",
+			"min_price": "1130.62",
+			"max_price": "1279.25",
+			"roomtype": "Suite",
+			"ranking": "0",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"hotel_id": "622736",
+			"bookable": 1,
+			"room_id": "62273605"
+		}],
+		"photos": [{
+			"url_square60": "http://aff.bstatic.com/images/hotel/square60/435/43569297.jpg",
+			"hotel_id": "622736",
+			"url_original": "http://aff.bstatic.com/images/hotel/max500/435/43569297.jpg",
+			"url_max300": "http://aff.bstatic.com/images/hotel/max300/435/43569297.jpg",
+			"photo_id": "43569297"
+		}]
+	}, {
+		"countrycode": "ke",
+		"is_closed": 0,
+		"nr_rooms": "156",
+		"ranking": "1553958",
+		"zip": "00606",
+		"max_persons_in_reservation": "0",
+		"city_id": "-2258072",
+		"address": "05 Woodvale Grove, Westlands",
+		"preferred": "1",
+		"minrate": 255,
+		"checkin": {
+			"from": "14:00",
+			"to": ""
+		},
+		"review_nr": "258",
+		"city": "Nairobi",
+		"url": "http://www.booking.com/hotel/ke/sankara-nairobi.html",
+		"currencycode": "USD",
+		"created": "2013-08-16 15:32:40",
+		"max_rooms_in_reservation": "0",
+		"hotel_id": "652573",
+		"district": "",
+		"maxrate": 491.52,
+		"location": {
+			"longitude": "36.8024879693985",
+			"latitude": "-1.2624163094934113"
+		},
+		"contractchain_id": "",
+		"class_is_estimated": 0,
+		"review_score": 8.5,
+		"languagecode": "en",
+		"book_domestic_without_cc_details": "0",
+		"hoteltype_id": "14",
+		"checkout": {
+			"from": "",
+			"to": "12:00"
+		},
+		"pagename": "sankara-nairobi",
+		"name": "Sankara Nairobi",
+		"class": "5",
+		"commission": 0,
+		"exact_class": "5.0",
+		"rooms": [{
+			"room_id": "65257302",
+			"bookable": 1,
+			"ranking": "0",
+			"bedding": {
+				"beds": [{
+					"amount": "2",
+					"type": "Single bed(s)"
+				}, {
+					"type": "Extra-large double bed(s) (Super-king size)",
+					"amount": "1"
+				}]
+			},
+			"hotel_id": "652573",
+			"min_price": "248.012",
+			"max_price": "363.52",
+			"roomtype": "Twin/Double",
+			"max_persons": "2",
+			"roomtype_id": "24"
+		}, {
+			"max_persons": "2",
+			"roomtype_id": "9",
+			"min_price": "275",
+			"max_price": "389.12",
+			"roomtype": "Double",
+			"ranking": "0",
+			"bedding": {
+				"beds": [{
+					"type": "Extra-large double bed(s) (Super-king size)",
+					"amount": "1"
+				}]
+			},
+			"hotel_id": "652573",
+			"room_id": "65257303",
+			"bookable": 1
+		}, {
+			"room_id": "65257304",
+			"bookable": 1,
+			"hotel_id": "652573",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"ranking": "0",
+			"roomtype": "Double",
+			"max_price": "389.12",
+			"min_price": "304.96",
+			"roomtype_id": "9",
+			"max_persons": "2"
+		}, {
+			"min_price": "374.72",
+			"max_price": "491.52",
+			"roomtype": "Suite",
+			"max_persons": "2",
+			"roomtype_id": "5",
+			"room_id": "65257305",
+			"bookable": 1,
+			"ranking": "0",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"hotel_id": "652573"
+		}, {
+			"max_persons": "2",
+			"roomtype_id": "8",
+			"min_price": "248.012",
+			"max_price": "363.52",
+			"roomtype": "Twin",
+			"ranking": "0",
+			"bedding": {
+				"beds": [{
+					"type": "Single bed(s)",
+					"amount": "2"
+				}]
+			},
+			"hotel_id": "652573",
+			"room_id": "65257306",
+			"bookable": 1
+		}],
+		"photos": [{
+			"photo_id": "54567171",
+			"url_max300": "http://aff.bstatic.com/images/hotel/max300/545/54567171.jpg",
+			"url_original": "http://aff.bstatic.com/images/hotel/max500/545/54567171.jpg",
+			"hotel_id": "652573",
+			"url_square60": "http://aff.bstatic.com/images/hotel/square60/545/54567171.jpg"
+		}]
+	}, {
+		"nr_rooms": "101",
+		"is_closed": 0,
+		"countrycode": "ke",
+		"ranking": "1554475",
+		"zip": "41596",
+		"max_persons_in_reservation": "0",
+		"city_id": "-2258072",
+		"checkin": {
+			"from": "14:00",
+			"to": "00:00"
+		},
+		"review_nr": "197",
+		"minrate": 200.6,
+		"address": "14 Riverside Drive, Riverside Woods, Off Riverside Drive",
+		"preferred": "1",
+		"max_rooms_in_reservation": "0",
+		"created": "2014-06-24 14:29:48",
+		"currencycode": "USD",
+		"city": "Nairobi",
+		"url": "http://www.booking.com/hotel/ke/dusitd2-nairobi.html",
+		"district": "",
+		"hotel_id": "1094082",
+		"location": {
+			"latitude": "-1.2701183790470374",
+			"longitude": "36.802903150601196"
+		},
+		"maxrate": 649,
+		"class_is_estimated": 0,
+		"contractchain_id": "",
+		"languagecode": "xu",
+		"book_domestic_without_cc_details": "0",
+		"review_score": 8.9,
+		"checkout": {
+			"from": "07:00",
+			"to": "12:00"
+		},
+		"hoteltype_id": "14",
+		"name": "DusitD2 Nairobi",
+		"pagename": "dusitd2-nairobi",
+		"commission": 0,
+		"exact_class": "5.0",
+		"class": "5",
+		"rooms": [{
+			"hotel_id": "1094082",
+			"bedding": {
+				"beds": [{
+					"type": "Extra-large double bed(s) (Super-king size)",
+					"amount": "1"
+				}]
+			},
+			"ranking": "1000",
+			"room_id": "109408201",
+			"bookable": 1,
+			"roomtype_id": "9",
+			"max_persons": "2",
+			"roomtype": "Double",
+			"max_price": "295",
+			"min_price": "259.6"
+		}, {
+			"min_price": "236",
+			"max_price": "311.4",
+			"roomtype": "Double",
+			"max_persons": "2",
+			"roomtype_id": "9",
+			"bookable": 1,
+			"room_id": "109408202",
+			"ranking": "1001",
+			"bedding": {
+				"beds": [{
+					"type": "Extra-large double bed(s) (Super-king size)",
+					"amount": "1"
+				}]
+			},
+			"hotel_id": "1094082"
+		}, {
+			"max_persons": "2",
+			"roomtype_id": "9",
+			"max_price": "276",
+			"min_price": "200.6",
+			"roomtype": "Double",
+			"ranking": "1002",
+			"hotel_id": "1094082",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"bookable": 1,
+			"room_id": "109408203"
+		}, {
+			"roomtype_id": "5",
+			"max_persons": "2",
+			"roomtype": "Suite",
+			"max_price": "649",
+			"min_price": "613.6",
+			"hotel_id": "1094082",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"ranking": "1003",
+			"room_id": "109408204",
+			"bookable": 1
+		}, {
+			"min_price": "200.6",
+			"max_price": "276",
+			"roomtype": "Twin",
+			"max_persons": "2",
+			"roomtype_id": "8",
+			"bookable": 1,
+			"room_id": "109408205",
+			"ranking": "0",
+			"bedding": {
+				"beds": [{
+					"amount": "2",
+					"type": "Single bed(s)"
+				}]
+			},
+			"hotel_id": "1094082"
+		}, {
+			"roomtype": "Twin",
+			"min_price": "236",
+			"max_price": "311.4",
+			"roomtype_id": "8",
+			"max_persons": "2",
+			"bookable": 1,
+			"room_id": "109408206",
+			"bedding": {
+				"beds": [{
+					"amount": "2",
+					"type": "Single bed(s)"
+				}]
+			},
+			"hotel_id": "1094082",
+			"ranking": "0"
+		}, {
+			"max_price": "377.6",
+			"min_price": "342.2",
+			"roomtype": "Suite",
+			"max_persons": "2",
+			"roomtype_id": "5",
+			"bookable": 1,
+			"room_id": "109408207",
+			"ranking": "0",
+			"hotel_id": "1094082",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Double bed(s)"
+				}]
+			}
+		}],
+		"photos": [{
+			"url_square60": "http://aff.bstatic.com/images/hotel/square60/343/34368114.jpg",
+			"hotel_id": "1094082",
+			"url_original": "http://aff.bstatic.com/images/hotel/max500/343/34368114.jpg",
+			"url_max300": "http://aff.bstatic.com/images/hotel/max300/343/34368114.jpg",
+			"photo_id": "34368114"
+		}]
+	}, {
+		"zip": "00200",
+		"is_closed": 0,
+		"nr_rooms": "28",
+		"countrycode": "ke",
+		"ranking": "1549855",
+		"minrate": 74.77,
+		"review_nr": "323",
+		"checkin": {
+			"to": "23:30",
+			"from": "12:00"
+		},
+		"preferred": "1",
+		"address": "09 Mogotio Road, Westlands",
+		"created": "2014-11-13 14:23:41",
+		"max_rooms_in_reservation": "0",
+		"city": "Nairobi",
+		"url": "http://www.booking.com/hotel/ke/la-maison-royale.html",
+		"currencycode": "USD",
+		"max_persons_in_reservation": "0",
+		"city_id": "-2258072",
+		"class_is_estimated": 0,
+		"contractchain_id": "",
+		"district": "",
+		"hotel_id": "1197674",
+		"location": {
+			"latitude": "-1.2653360635990105",
+			"longitude": "36.808605417609215"
+		},
+		"maxrate": 168.96,
+		"name": "La Maison Royale",
+		"pagename": "la-maison-royale",
+		"exact_class": "4.0",
+		"commission": 0,
+		"class": "4",
+		"languagecode": "xu",
+		"book_domestic_without_cc_details": "1",
+		"review_score": 8.1,
+		"hoteltype_id": "14",
+		"checkout": {
+			"from": "11:00",
+			"to": "13:00"
+		},
+		"rooms": [{
+			"max_persons": "2",
+			"roomtype_id": "9",
+			"min_price": "74.77",
+			"max_price": "127.92",
+			"roomtype": "Double",
+			"ranking": "1000",
+			"bedding": {
+				"beds": [{
+					"type": "Large bed(s) (King size)",
+					"amount": "1"
+				}]
+			},
+			"hotel_id": "1197674",
+			"room_id": "119767401",
+			"bookable": 1
+		}, {
+			"hotel_id": "1197674",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Large bed(s) (King size)"
+				}]
+			},
+			"ranking": "1001",
+			"room_id": "119767402",
+			"bookable": 1,
+			"roomtype_id": "9",
+			"max_persons": "2",
+			"roomtype": "Double",
+			"max_price": "138.79",
+			"min_price": "79.17"
+		}, {
+			"max_price": "150.86",
+			"min_price": "102.58",
+			"roomtype": "Double",
+			"max_persons": "2",
+			"roomtype_id": "9",
+			"bookable": 1,
+			"room_id": "119767403",
+			"ranking": "1002",
+			"hotel_id": "1197674",
+			"bedding": {
+				"beds": [{
+					"type": "Large bed(s) (King size)",
+					"amount": "1"
+				}]
+			}
+		}, {
+			"roomtype_id": "5",
+			"max_persons": "2",
+			"roomtype": "Suite",
+			"max_price": "168.96",
+			"min_price": "120.67",
+			"hotel_id": "1197674",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			},
+			"ranking": "1003",
+			"room_id": "119767404",
+			"bookable": 1
+		}, {
+			"hotel_id": "1197674",
+			"bedding": {
+				"beds": [{
+					"amount": "2",
+					"type": "Double bed(s)"
+				}]
+			},
+			"ranking": "0",
+			"bookable": 0,
+			"room_id": "119767405",
+			"roomtype_id": "5",
+			"max_persons": "4",
+			"roomtype": "Suite",
+			"max_price": null,
+			"min_price": null
+		}],
+		"photos": [{
+			"hotel_id": "1197674",
+			"url_square60": "http://aff.bstatic.com/images/hotel/square60/381/38146404.jpg",
+			"photo_id": "38146404",
+			"url_max300": "http://aff.bstatic.com/images/hotel/max300/381/38146404.jpg",
+			"url_original": "http://aff.bstatic.com/images/hotel/max500/381/38146404.jpg"
+		}]
+	}, {
+		"created": "2014-12-15 10:42:31",
+		"max_rooms_in_reservation": "0",
+		"url": "http://www.booking.com/hotel/ke/bidwood-suites.html",
+		"city": "Nairobi",
+		"currencycode": "USD",
+		"minrate": 120,
+		"review_nr": "334",
+		"checkin": {
+			"from": "12:00",
+			"to": ""
+		},
+		"preferred": "1",
+		"address": "Lower Kabete Road",
+		"city_id": "-2258072",
+		"max_persons_in_reservation": "0",
+		"zip": "00200",
+		"ranking": "1552638",
+		"is_closed": 0,
+		"nr_rooms": "44",
+		"countrycode": "ke",
+		"exact_class": "4.0",
+		"commission": 0,
+		"class": "4",
+		"name": "Bidwood Suite Hotel",
+		"pagename": "bidwood-suites",
+		"hoteltype_id": "14",
+		"checkout": {
+			"to": "10:30",
+			"from": "10:00"
+		},
+		"languagecode": "xu",
+		"book_domestic_without_cc_details": "0",
+		"review_score": 8.8,
+		"class_is_estimated": 0,
+		"contractchain_id": "",
+		"location": {
+			"latitude": "-1.2600875000000005",
+			"longitude": "36.800662959524516"
+		},
+		"maxrate": 1000,
+		"district": "",
+		"hotel_id": "1250648",
+		"rooms": [{
+			"bedding": {
+				"beds": [{
+					"type": "Large bed(s) (King size)",
+					"amount": "1"
+				}]
+			},
+			"hotel_id": "1250648",
+			"ranking": "1000",
+			"bookable": 1,
+			"room_id": "125064801",
+			"roomtype_id": "9",
+			"max_persons": "2",
+			"roomtype": "Double",
+			"min_price": "120",
+			"max_price": "140.667"
+		}, {
+			"bookable": 1,
+			"room_id": "125064802",
+			"hotel_id": "1250648",
+			"bedding": {
+				"beds": [{
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}, {
+					"type": "Sofa bed(s)",
+					"amount": "1"
+				}]
+			},
+			"ranking": "1001",
+			"roomtype": "Suite",
+			"max_price": "180",
+			"min_price": "150",
+			"roomtype_id": "5",
+			"max_persons": "2"
+		}, {
+			"max_price": "320",
+			"min_price": "250",
+			"roomtype": "Suite",
+			"max_persons": "4",
+			"roomtype_id": "5",
+			"room_id": "125064803",
+			"bookable": 1,
+			"ranking": "1002",
+			"hotel_id": "1250648",
+			"bedding": {
+				"beds": [{
+					"amount": "2",
+					"type": "Single bed(s)"
+				}, {
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}]
+			}
+		}, {
+			"max_price": "1000",
+			"min_price": "850",
+			"roomtype": "Suite",
+			"max_persons": "4",
+			"roomtype_id": "5",
+			"bookable": 1,
+			"room_id": "125064806",
+			"ranking": "0",
+			"hotel_id": "1250648",
+			"bedding": {
+				"beds": [{
+					"type": "Large bed(s) (King size)",
+					"amount": "2"
+				}]
+			}
+		}],
+		"photos": [{
+			"url_square60": "http://aff.bstatic.com/images/hotel/square60/460/46066722.jpg",
+			"hotel_id": "1250648",
+			"url_max300": "http://aff.bstatic.com/images/hotel/max300/460/46066722.jpg",
+			"url_original": "http://aff.bstatic.com/images/hotel/max500/460/46066722.jpg",
+			"photo_id": "46066722"
+		}]
+	}, {
+		"max_rooms_in_reservation": "0",
+		"created": "2015-03-16 12:51:35",
+		"currencycode": "USD",
+		"city": "Nairobi",
+		"url": "http://www.booking.com/hotel/ke/mimosa-court-apartments.html",
+		"checkin": {
+			"from": "08:00",
+			"to": "22:00"
+		},
+		"review_nr": "21",
+		"minrate": 160,
+		"preferred": "1",
+		"address": "Mucai Drive Off Ngong Road",
+		"city_id": "-2258072",
+		"max_persons_in_reservation": "0",
+		"zip": "00200",
+		"ranking": "1552915",
+		"nr_rooms": "39",
+		"is_closed": 0,
+		"countrycode": "ke",
+		"commission": 0,
+		"exact_class": "5.0",
+		"class": "5",
+		"name": "Mimosa Court Apartments",
+		"pagename": "mimosa-court-apartments",
+		"checkout": {
+			"to": "12:00",
+			"from": "10:00"
+		},
+		"hoteltype_id": "2",
+		"languagecode": "xu",
+		"book_domestic_without_cc_details": "0",
+		"review_score": 8.1,
+		"class_is_estimated": 0,
+		"contractchain_id": "",
+		"location": {
+			"longitude": "36.798861622810364",
+			"latitude": "-1.3002601441729338"
+		},
+		"maxrate": 215,
+		"district": "",
+		"hotel_id": "1320747",
+		"rooms": [{
+			"roomtype_id": "1",
+			"max_persons": "2",
+			"roomtype": "Apartment",
+			"max_price": "160",
+			"min_price": "160",
+			"hotel_id": "1320747",
+			"bedding": {
+				"beds": [{
+					"type": "Extra-large double bed(s) (Super-king size)",
+					"amount": "1"
+				}]
+			},
+			"ranking": "1000",
+			"bookable": 1,
+			"room_id": "132074701"
+		}, {
+			"min_price": "180",
+			"max_price": "180",
+			"roomtype": "Apartment",
+			"max_persons": "4",
+			"roomtype_id": "1",
+			"room_id": "132074702",
+			"bookable": 1,
+			"ranking": "1001",
+			"bedding": {
+				"beds": [{
+					"amount": "2",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}, {
+					"type": "Large bed(s) (King size)",
+					"amount": "1"
+				}]
+			},
+			"hotel_id": "1320747"
+		}, {
+			"max_persons": "4",
+			"roomtype_id": "1",
+			"min_price": "197.8",
+			"max_price": "215",
+			"roomtype": "Apartment",
+			"ranking": "1002",
+			"bedding": {
+				"beds": [{
+					"type": "Double bed(s)",
+					"amount": "1"
+				}, {
+					"amount": "1",
+					"type": "Extra-large double bed(s) (Super-king size)"
+				}, {
+					"amount": "1",
+					"type": "Large bed(s) (King size)"
+				}]
+			},
+			"hotel_id": "1320747",
+			"bookable": 1,
+			"room_id": "132074703"
+		}],
+		"photos": [{
+			"hotel_id": "1320747",
+			"url_square60": "http://aff.bstatic.com/images/hotel/square60/502/50282736.jpg",
+			"photo_id": "50282736",
+			"url_original": "http://aff.bstatic.com/images/hotel/max500/502/50282736.jpg",
+			"url_max300": "http://aff.bstatic.com/images/hotel/max300/502/50282736.jpg"
+		}]
+	}],
+	"label": "Nairobi, Nairobi, Kenya"
+}

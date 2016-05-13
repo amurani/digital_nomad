@@ -1,8 +1,13 @@
 .jumbotron {
-  background-image: url(../img/places/rome.jpg);
+  background-image: url(../img/places/nairobi.jpg);
   min-height: 300px;
   background-position: bottom;
   background-size: cover;
+}
+
+.jumbotron .highlight {
+  background-color: rgba(0, 0, 0, .5);
+  display: inline-block;
 }
 
 .youre-booked {
@@ -55,20 +60,23 @@
 #listed-properties .listed-property .property-image {
   background-color: #566d85;
   display: inline-block;
-  height: 150px;
-  width: 150px;
+  width: 300px;
+}
+
+#listed-properties .listed-property .property-image {
+  width: 300px;
 }
 
 #listed-properties .listed-property .property-content {
   padding: 0 10px;
-  margin-left: 150px;
+  margin-left: 300px;
 }
 
 #listed-properties .loading {
   background-color: #fff;
   border: 1px solid #d3d3d3;
+  padding: 10px;
 }
-
 
 .avialable-room-details {
   border-bottom: 1px solid #ccc;

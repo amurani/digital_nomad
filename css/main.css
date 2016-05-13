@@ -55,6 +55,13 @@ body {
   text-decoration: none;
 }
 
+.cta:hover {
+  background-color: #e74c3c;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
 /*Forms*/
 .form-inline label {
   display: block;

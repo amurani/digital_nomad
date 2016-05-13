@@ -19,9 +19,9 @@ confirm_logged_in();
   <body>
     <div class="jumbotron">
       <div class="container font-white">
-        <h1>Where going to Rome</h1>
+        <h1>We're going to Nairobi</h1>
         <h3>20th - 24th of June</h3>
-        <a class="cta" href="#">Come Join Us</a>
+        <a class="cta" href="#">Join the trip</a>
         <div class="youre-booked">
           <span class="glyphicon glyphicon-ok-circle"></span>
           <span>You're already booked.</span>
@@ -38,15 +38,15 @@ confirm_logged_in();
         <div class="col-md-7" id="hotel-listings">
 
           <!-- Display where other people are staying -->
-          <div id="popular-properties">
-            <h3>Other people are already ready and booked ...</h3>
+          <!-- <div id="popular-properties">
+            <h3>Others are already booked and ready to go ...</h3>
             <div class="row">
-              <?php include 'templates/popular_bookings.php' ?>
+              <?php //include 'templates/popular_bookings.php' ?>
             </div>
-          </div>
+          </div> -->
 
           <!-- Booking -->
-          <h3>Or find a place that suit you better ...</h3>
+          <h3>Find a place that suit you ...</h3>
 
           <!-- Filter results to travellers needs -->
           <div id="listed-properties-filters">
@@ -65,9 +65,9 @@ confirm_logged_in();
           <div id="listed-properties">
             <ul class="list-unstyled">
               <?php include 'templates/hotels.php' ?>
-              <!-- <li class="loading text-center">
+              <li class="loading text-center">
                 <img src="img/ajax-loader.gif" alt="" />
-              </li> -->
+              </li>
             </ul>
           </div>
 
@@ -103,7 +103,7 @@ confirm_logged_in();
 
     <!-- Handlebars Templates -->
     <?php //include 'templates/popular_bookings.php' ?>
-    <?php //include 'templates/hotels.php' ?>
+    <?php include 'templates/hotels.php' ?>
     <?php //include 'templates/rooms.php' ?>
     <!-- Javascript Assets -->
     <?php include 'includes/javascript.php' ?>

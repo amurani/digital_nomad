@@ -9,5 +9,5 @@
 </div>
 
 <script type="text/x-handlebars-template" id="popular-properties-template">
-
+  
 </script>
