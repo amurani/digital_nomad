@@ -1,4 +1,5 @@
-<?php 
+<?php
+include "includes/globals.php";
 include "includes/session.php";
 include "includes/db.php";
 
@@ -6,41 +7,44 @@ if (isset($_POST['submit'])){
     //form credentials have been submitted
     //get credentials
     global $connection;
-    
+
     $username = $_POST['username'];
     $password = $_POST['password'];
-    
+
     $username = mysqli_real_escape_string($connection, $username );
     $username = strtolower($username);
     $password = mysqli_real_escape_string($connection, $password );
-    
+
     //get credentials from database
     $query = "SELECT * FROM users WHERE username = '{$username}' and password = '{$password}' LIMIT 1";
     $result = mysqli_query($connection, $query);
- 
+
     if (!$result){
         die ("Could not connect to the database" . mysqli_error($connection));
     }
-    
+
     $row = mysqli_fetch_assoc($result);
-    
+
     $dbusername = $row['username'];
     $dbpassword = $row['password'];
-    
+
     //compare the credentials
     if (strcasecmp($username, $dbusername) == 0 && $password == $dbpassword){
         //login successful, set session
         $_SESSION['userID'] = $userID;
-        
-        $url = "http://localhost/digital_nomad/trip.php";
+        if (gethostname() == "Kevins-MacBook-Pro.local") {
+          $url = get_base_url()."/trip.php";
+        } else {
+          $url = get_base_url()."/trip.php";
+        }
         redirect_to($url);
-        
+
     } else {
         //login not successful
         $errorMessage = "Login was not successful! Please try again.";
         $errorMessage .= " Make sure you use your first name as Username and phone number as Password.";
     }
-    
+
         if (isset($_GET['logout']) && $_GET['logout'] == 1){
             $logout_message = "You are now logged out.<br /><b>Please log in to continue.</b>";
             $username = "";
@@ -68,11 +72,11 @@ if (isset($_POST['submit'])){
             echo "<p>" . $logout_message . "</p>";
         }
     }
-    
+
 ?>
 <div class="login">
   <div class="login-triangle"></div>
-  
+
   <h2 class="login-header">Log in</h2>
 
   <form class="login-container" action="login.php" method="post">

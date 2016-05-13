@@ -1,13 +1,16 @@
-<?php session_start();
-    
+<?php
+session_start();
+
     function logged_in() {
         return isset($_SESSION['userID']);
     }
-    
+
     function confirm_logged_in(){
+
        if (!logged_in()){
-       session_write_close();
-           header("Location: http://localhost/digital_nomad/login.php");
+         $url = get_base_url()."/login.php";
+           session_write_close();
+           header("Location: ".$url);
            exit();
        }
     }
@@ -27,7 +30,7 @@ function trackOnlineUsers(){
         $result = mysqli_query($connection, $query);
         if (!$result){
             die("Could not INSERT INTO online_users" . mysqli_error());
-        }        
+        }
     }
 }
 
@@ -37,14 +40,14 @@ function destroyOnlineStatus(){
     if (!$connection){
         echo "Connection to db NOT successful!" . mysqli_error();
     }
-    
+
     if (isset($_SESSION['userID'])){
         $userID = $_SESSION['userID'];
         $query = "DELETE FROM online_users WHERE user_id = {$userID} LIMIT 1";
         $result = mysqli_query($connection, $query);
         if (!$result){
             die("Could not DELETE online status" . mysqli_error());
-        }        
+        }
     }
 }
 ?>
