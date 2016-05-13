@@ -1,4 +1,10 @@
+<?php include "includes/session.php" ?>
 <?php
+//check if user is logged in
+confirm_logged_in();
+
+?>
+ <?php
   include 'includes/globals.php'
 ?>
 <!DOCTYPE html>
