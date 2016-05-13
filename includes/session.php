@@ -7,7 +7,7 @@
     function confirm_logged_in(){
        if (!logged_in()){
        session_write_close();
-           header("Location: http://localhost/csfello/login.php");
+           header("Location: http://localhost/digital_nomad/login.php");
            exit();
        }
     }
