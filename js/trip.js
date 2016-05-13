@@ -41,7 +41,9 @@ $(function() {
     var roomsData = hotelData.rooms;
     roomsData.forEach(function(room) {
       room.beddingDetails = room.bedding.beds;
+      room.hotelImage = hotelData.photos[0].url_original;
     });
+    console.log(roomsData);
     var html = roomTemplate({ rooms: roomsData });
     $('#available-rooms>ul').html( html );
     $('#view-rooms-modal').modal();

@@ -14,6 +14,11 @@ body {
   border-bottom: 2px dashed #566d85;
 }
 
+.highlighted {
+  background-color: rgba(0, 0, 0, .5);
+  padding: 10px 20px;
+}
+
 /*Color*/
   .font-white {
     color: white;
