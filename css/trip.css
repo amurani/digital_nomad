@@ -5,14 +5,15 @@
   background-position: bottom;
   background-size: cover;
   height: 414px;
+  overflow: hidden;
   position: relative;
 }
 
 .jumbotron img#stamp {
-  bottom: 10px;
+  bottom: -10px;
   height: 200px;
   position: absolute;
-  right: 10px;
+  right: -10px;
   transform: rotate(340deg);
   width: auto;
   -webkit-filter: brightness(4);

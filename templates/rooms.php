@@ -42,7 +42,12 @@
 
       <!-- Book room -->
       <div class="text-right">
-        <a class="btn btn-success view-rooms" href="?user_id=<?php echo 2 ?>&hotel_id={{hotel_id}}&room_id={{room_id}}">
+        <a class="btn btn-success view-rooms" href="?user_id=
+        <?php
+             if (isset($_SESSION['userID'])){
+                 echo $_SESSION['userID'];
+             }
+        ?>&hotel_id={{hotel_id}}&room_id={{room_id}}">
           <span class="glyphicon glyphicon-calendar"></span>
           <span>Book Room</span>
         </a>

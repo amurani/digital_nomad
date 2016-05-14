@@ -43,6 +43,22 @@ if (isset($_GET['user_id']) && isset($_GET['hotel_id']) && isset($_GET['room_id'
     }
 
 }
+
+//view accomodations. Pull user booking records from db
+if (isset($_GET['user_records_id'])){
+    $userID = $_GET['user_records_id'];
+    $query = "SELECT * FROM booking WHERE user_id={$userID} LIMIT 1";
+    $result = mysqli_error($connection, $query);
+
+    if (!$result){
+        die ("Could not reading from booking table" . mysqli_error());
+    }
+
+    $row = mysqli_fetch_assoc($result);
+
+    $hotel_id = $row['hotel_id'];
+    $room_id = $row['room_id'];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -71,23 +87,33 @@ if (isset($_GET['user_id']) && isset($_GET['hotel_id']) && isset($_GET['room_id'
         </nav>
       </div>
     </header>
+
     <div class="jumbotron">
-      <!-- stamp image -->
-      <!-- <img id="stamp" src="img/stamp.png" alt="" /> -->
+      <img id="stamp" src="img/stamp.png" alt="" />
       <div class="container font-white">
         <!-- <h1><span class="highlighted">We're going to Nairobi !!!</span></h1>
         <h3><span class="highlighted">20th - 24th of June</span></h3> -->
         <div class="text-right">
           <?php
-             if (isset($alreadyBookedMsg)){
+             $userSessionId = $_SESSION['userID'];
+             if (checkBookingStatus($userSessionId)){
           ?>
           <div class="youre-booked">
-            <span class="highlighted" style="transform: rotate(358deg);">
+            <span class="highlighted">
               <span class="glyphicon glyphicon-ok-circle"></span>
               <span>You're already booked.</span>
             </span>
+            <br>
+            <a class="font-white highlighted" href="
+            <?php
+              $userID = $_SESSION['userID'];
+              if (gethostname() == "Kevins-MacBook-Pro.local") {
+                $url = get_base_url()."trip.php?user_records_id={$userID}";
+              } else {
+                $url = get_base_url()."trip.php?user_records_id={$userID}";
+              }
+             ?>">View my accomodation &#187;</a>
           </div>
-          <a class="cta" href="#listed-properties">Join the trip</a>
           <?php
             } else {
           ?>
@@ -96,9 +122,9 @@ if (isset($_GET['user_id']) && isset($_GET['hotel_id']) && isset($_GET['room_id'
           }
           ?>
         </div>
-
       </div>
     </div>
+
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-7" id="hotel-listings">
