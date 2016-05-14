@@ -78,8 +78,21 @@
 }
 
 #what a {
+  color: #e74c3c;
+  border-bottom: 3px solid #fff;
+  font-size: 1.2em;
   display: inline-block;
   padding: 20px;
+}
+
+#what a:hover {
+  border-bottom-color: #e74c3c;
+  text-decoration: none;
+}
+
+#listed-properties-filters,
+#places-of-interest {
+  display: none;
 }
 
 #listed-properties-filters {

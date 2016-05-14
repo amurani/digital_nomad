@@ -102,4 +102,14 @@ $(function() {
     // });
   });
 
+  $('#what a').eq(0).click(function() {
+    $('#listed-properties-filters').toggle();
+  });
+
+  $('#what a').eq(1).click(function() {
+    $('#places-of-interest').toggle();
+  });
+
+  $('#what a').eq(0).click();
+
 });
