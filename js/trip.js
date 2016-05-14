@@ -86,9 +86,9 @@ $(function() {
   });
 
   // get the hotels in the trip location
-  // $.getJSON('http://10.62.0.180:3000/hotels\?city\=Nairobi\&checkin\=2016-08-04\&checkout\=2016-08-15', function(data) {
+  $.getJSON('http://10.62.0.180:3000/hotels\?city\=Nairobi\&checkin\=2016-08-04\&checkout\=2016-08-15', function(data) {
   // $.getJSON('http://localhost/digital_nomad/data/hotels.json', function(data) {
-  $.getJSON('http://localhost:8000/digital_nomad/data/hotels.json', function(data) {
+  // $.getJSON('http://localhost:8000/digital_nomad/data/hotels.json', function(data) {
     bookingAPIData = data;
     availableHotels = bookingAPIData.hotels;
     availableHotels.forEach(function(hotel) {
@@ -100,9 +100,9 @@ $(function() {
     $('#listed-properties ul').html(html);
   });
 
-  // $.getJSON('http://10.62.0.180:3000/events\?city\=Nairob', function(data) {
+  $.getJSON('http://10.62.0.180:3000/events\?city\=nairobi', function(data) {
   // $.getJSON('http://localhost/digital_nomad/data/events.json', function(data) {
-  $.getJSON('http://localhost:8000/digital_nomad/data/events.json', function(data) {
+  // $.getJSON('http://localhost:8000/digital_nomad/data/events.json', function(data) {
     eventsAPIData = data;
     var html = eventTemplate({ events: eventsAPIData.events });
     $('#city-events ul').html(html);
@@ -126,14 +126,27 @@ $(function() {
 
   $('#what a').eq(0).click();
 
-  var booked = window.location.href.match(/hotel_id/).length
-  if (booked) {
+  var booked = window.location.href.match(/hotel_id/)
+  if (booked && booked.length) {
     swal({
       title: "Your good 👍",
       text: "Your booking was successful. We're looking foward to seing you on the trip :) !!!",
       confirmButtonColor: "#2ecc71",
       type: "success"
+    }, function(isConfirm) {
+      if (isConfirm) {
+        window.location.href = 'trip.php';
+      }
     });
   }
+
+  $('#social').pisocials({
+    services: [
+      "facebookShare",
+      "facebookLike",
+      '<a href="http://www.jqueryscript.net/tags.php?/twitter/">twitter</a>',
+      "googleplus"
+    ]
+  });
 
 });

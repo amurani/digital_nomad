@@ -104,6 +104,9 @@ if (isset($_GET['user_records_id'])){
               <span>You're already booked.</span>
             </span>
           </div>
+          <div class="text-right">
+            <div id="social"></div>
+          </div>
           <?php
             } else {
           ?>
