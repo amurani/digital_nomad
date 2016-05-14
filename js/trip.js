@@ -46,6 +46,14 @@ $(function() {
       return '';
   });
 
+  Handlebars.registerHelper('getRating', function(no) {
+    var stars = '';
+    for (var i = 0; i < no; i++) {
+      stars += '<span class="glyphicon glyphicon-star"></span>';
+    }
+    return stars;
+  });
+
   Handlebars.registerHelper('getEventDate', function(date) {
     return moment(date.local).calendar()
   });
@@ -71,7 +79,7 @@ $(function() {
       room.beddingDetails = room.bedding.beds;
       room.hotelImage = hotelData.photos[0].url_original;
     });
-    console.log(roomsData);
+
     var html = roomTemplate({ rooms: roomsData });
     $('#available-rooms>ul').html( html );
     $('#view-rooms-modal').modal();
@@ -80,10 +88,14 @@ $(function() {
   // get the hotels in the trip location
   // $.getJSON('http://10.62.0.180:3000/hotels\?city\=Nairobi\&checkin\=2016-08-04\&checkout\=2016-08-15', function(data) {
   // $.getJSON('http://localhost/digital_nomad/data/hotels.json', function(data) {
-  $.getJSON('http://localhost/digital_nomad/data/hotels.json', function(data) {
+  $.getJSON('http://localhost:8000/digital_nomad/data/hotels.json', function(data) {
     bookingAPIData = data;
     availableHotels = bookingAPIData.hotels;
-
+    availableHotels.forEach(function(hotel) {
+      var no = parseInt(hotel.review_score);
+      hotel.stars = no;
+    });
+    console.log(availableHotels[0].stars)
     var html = hotelTemplate({ hotels : availableHotels });
     $('#listed-properties ul').html(html);
   });
@@ -113,5 +125,15 @@ $(function() {
   });
 
   $('#what a').eq(0).click();
+
+  var booked = window.location.href.match(/hotel_id/).length
+  if (booked) {
+    swal({
+      title: "Your good 👍",
+      text: "Your booking was successful. We're looking foward to seing you on the trip :) !!!",
+      confirmButtonColor: "#2ecc71",
+      type: "success"
+    });
+  }
 
 });
