@@ -104,7 +104,6 @@ if (isset($_GET['user_records_id'])){
               <span>You're already booked.</span>
             </span>
           </div>
-          <a class="cta" href="#listed-properties">Join the trip</a>
           <?php
             } else {
           ?>
@@ -113,6 +112,19 @@ if (isset($_GET['user_records_id'])){
           }
           ?>
         </div>
+      </div>
+    </div>
+
+    <div id="what">
+      <div class="text-center">
+        <a href="#">
+          <span class="glyphicon glyphicon-bed"></span>
+          <span>Accomodations</span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-time"></span>
+          <span>Activities</span>
+        </a>
       </div>
     </div>
 
