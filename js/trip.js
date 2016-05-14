@@ -3,8 +3,10 @@ $(function() {
   // globals
   var bookingAPIData = {};
   var availableHotels = [];
+  var eventsAPIData = [];
 
   const dollarShillingRate = 100.70;
+  const location = 'nairobi';
 
   var popularListing = $('.popular-property').parent();
   $('#popular-properties .row').append( popularListing.clone() );
@@ -33,6 +35,21 @@ $(function() {
     return priceInShillings.toLocaleString();
   });
 
+  Handlebars.registerHelper('getEventName', function(name) {
+    return name.text;
+  });
+
+  Handlebars.registerHelper('getEventDescription', function(description) {
+    if (description.text)
+      return description.text.substring(0, 100) + '...';
+    else
+      return '';
+  });
+
+  Handlebars.registerHelper('getEventDate', function(date) {
+    return moment(date.local).calendar()
+  });
+
   // hotel template
   var hotelSource = $('#hotel-template').html();
   var hotelTemplate = Handlebars.compile(hotelSource);
@@ -40,6 +57,10 @@ $(function() {
   // rooms template
   var roomSource = $('#available-room-template').html();
   var roomTemplate = Handlebars.compile(roomSource);
+
+  // events template
+  var eventSource = $('#events-template').html();
+  var eventTemplate = Handlebars.compile(eventSource);
 
   // View Rooms
   $('#listed-properties').on('click', '.view-rooms', function() {
@@ -66,4 +87,19 @@ $(function() {
     var html = hotelTemplate({ hotels : availableHotels });
     $('#listed-properties ul').html(html);
   });
+
+  // $.getJSON('http://10.62.0.180:3000/events\?city\=Nairob', function(data) {
+  // $.getJSON('http://localhost/digital_nomad/data/events.json', function(data) {
+  $.getJSON('http://localhost:8000/digital_nomad/data/events.json', function(data) {
+    eventsAPIData = data;
+    var html = eventTemplate({ events: eventsAPIData.events });
+    $('#city-events ul').html(html);
+
+    // $('#city-events ul').pagination({
+    //   items: eventsAPIData.events.length,
+    //   itemsOnPage: 10,
+    //   cssStyle: 'light-theme'
+    // });
+  });
+
 });
