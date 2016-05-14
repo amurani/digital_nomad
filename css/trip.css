@@ -13,12 +13,14 @@
 
 .jumbotron img#stamp {
   bottom: -10px;
-  height: 200px;
+  height: 100px;
   position: absolute;
   right: -10px;
   transform: rotate(340deg);
   width: auto;
   -webkit-filter: brightness(4);
+  display: none;
+
 }
 
 .jumbotron h1,
@@ -34,7 +36,9 @@
   background-color: transparent;
   border-color: #fff;
   color: #fff;
-  margin-top: 80px;
+  font-size: 1.5em;
+  margin-top: 120px;
+  padding: 10px 40px;
 }
 
 .jumbotron a:hover {
@@ -90,7 +94,7 @@
   text-decoration: none;
 }
 
-#listed-properties-filters,
+#listed-properties,
 #places-of-interest {
   display: none;
 }
@@ -122,9 +126,15 @@
 #listed-properties .listed-property .property-content {
   background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, .5) 20%, #fff 40%);
   height: 100%;
-  padding: 0 10px;
-  padding-left: 310px;
+  padding: 0 30px;
+  padding-left: 330px;
+  /*position: absolute;*/
+}
+
+.view-rooms {
   position: absolute;
+  right: -20px;
+  z-index: 2;
 }
 
 #listed-properties .loading {

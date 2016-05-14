@@ -103,11 +103,13 @@ $(function() {
   });
 
   $('#what a').eq(0).click(function() {
-    $('#listed-properties-filters').toggle();
+    $('#listed-properties').toggle();
+    $('#places-of-interest').hide();
   });
 
   $('#what a').eq(1).click(function() {
     $('#places-of-interest').toggle();
+    $('#listed-properties').hide();
   });
 
   $('#what a').eq(0).click();
