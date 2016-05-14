@@ -1,8 +1,10 @@
 .jumbotron {
   background-image: url(../img/places/nairobi.jpg);
+  /*banner*/
+  background-image: url(../img/places/banner.jpg);
   background-position: bottom;
   background-size: cover;
-  min-height: 300px;
+  height: 414px;
   position: relative;
 }
 
@@ -23,6 +25,19 @@
 
 .jumbotron h3 {
   margin-bottom: 20px;
+}
+
+.jumbotron a {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  margin-top: 100px;
+}
+
+.jumbotron a:hover {
+  background-color: #fff;
+  border-color: #e74c3c;
+  color: #e74c3c;
 }
 
 .youre-booked {
@@ -113,4 +128,25 @@
   padding-top: 120px;
   position: absolute;
   width: 100%;
+}
+
+
+#city-events .event {
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-bottom: none;
+  padding: 10px;
+}
+
+#city-events .event:last-child {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#city-events .event .event-name {
+  color: #2ecc71;
+}
+
+#city-events .event .event-date {
+  color: #566d85;
+  font-weight: bold;
 }

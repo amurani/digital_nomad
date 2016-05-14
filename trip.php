@@ -72,27 +72,30 @@ if (isset($_GET['user_id']) && isset($_GET['hotel_id']) && isset($_GET['room_id'
       </div>
     </header>
     <div class="jumbotron">
-      <img id="stamp" src="img/stamp.png" alt="" />
+      <!-- stamp image -->
+      <!-- <img id="stamp" src="img/stamp.png" alt="" /> -->
       <div class="container font-white">
-        <h1><span class="highlighted">We're going to Nairobi !!!</span></h1>
-        <h3><span class="highlighted">20th - 24th of June</span></h3>
-        <?php
-           if (isset($alreadyBookedMsg)){
-        ?>
-        <div class="youre-booked">
-          <span class="glyphicon glyphicon-ok-circle highlighted"></span>
-          <span class="highlighted">You're already booked.</span>
-          <br>
-          <a class="font-white highlighted" href="#">View my accomodation &#187;</a>
+        <!-- <h1><span class="highlighted">We're going to Nairobi !!!</span></h1>
+        <h3><span class="highlighted">20th - 24th of June</span></h3> -->
+        <div class="text-right">
+          <?php
+             if (isset($alreadyBookedMsg)){
+          ?>
+          <div class="youre-booked">
+            <span class="highlighted" style="transform: rotate(358deg);">
+              <span class="glyphicon glyphicon-ok-circle"></span>
+              <span>You're already booked.</span>
+            </span>
+          </div>
+          <a class="cta" href="#listed-properties">Join the trip</a>
+          <?php
+            } else {
+          ?>
+          <a class="cta" href="#listed-properties">Join the trip</a>
+          <?php
+          }
+          ?>
         </div>
-        <?php
-          } else {
-        ?>
-        <a class="cta" href="#listed-properties">Join the trip</a>
-        <?php
-        }
-        ?>
-
 
       </div>
     </div>
@@ -138,7 +141,14 @@ if (isset($_GET['user_id']) && isset($_GET['hotel_id']) && isset($_GET['room_id'
 
         <!-- Places of interest -->
         <div class="col-md-5" id="places of interest">
-          Places of interest
+          <h3>Here's stuff we could do ...</h3>
+          <div id="city-events">
+            <ul class="list-unstyled">
+              <li class="loading text-center">
+                <img src="img/ajax-loader.gif" alt="" />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -158,7 +168,6 @@ if (isset($_GET['user_id']) && isset($_GET['hotel_id']) && isset($_GET['room_id'
           <div class="modal-body padd-0">
             <div id="available-rooms">
               <ul class="list-unstyled">
-                <?php include 'templates/rooms.php' ?>
                 <!-- <li class="loading text-center">
                   <img src="img/ajax-loader.gif" alt="" />
                 </li> -->
@@ -172,7 +181,8 @@ if (isset($_GET['user_id']) && isset($_GET['hotel_id']) && isset($_GET['room_id'
     <!-- Handlebars Templates -->
     <?php //include 'templates/popular_bookings.php' ?>
     <?php include 'templates/hotels.php' ?>
-    <?php //include 'templates/rooms.php' ?>
+    <?php include 'templates/rooms.php' ?>
+    <?php include 'templates/events.php' ?>
     <!-- Javascript Assets -->
     <?php include 'includes/javascript.php' ?>
     <script type="text/javascript" src="js/trip.js"></script>
