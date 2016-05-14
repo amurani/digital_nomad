@@ -3,6 +3,11 @@ include "includes/session.php";
 include "includes/globals.php";
 include "includes/db.php";
 
+if (logged_in()){
+    $url = get_base_url()."trip.php";
+    redirect_to($url);
+}
+
 if (isset($_POST['submit'])){
     //form credentials have been submitted
     //get credentials
