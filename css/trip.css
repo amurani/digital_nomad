@@ -48,8 +48,8 @@
 }
 
 .youre-booked {
-  color:#2ecc71;
   font-size: 2em;
+  margin-top: 120px;
 }
 
 .youre-booked a:hover {
@@ -131,10 +131,13 @@
   /*position: absolute;*/
 }
 
-.view-rooms {
-  position: absolute;
-  right: -20px;
-  z-index: 2;
+.rating {
+  margin-bottom: 10px
+}
+
+.rating .glyphicon {
+  color: #bdc3c7;
+  font-size: .8em;
 }
 
 #listed-properties .loading {

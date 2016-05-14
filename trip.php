@@ -100,7 +100,7 @@ if (isset($_GET['user_records_id'])){
           ?>
           <div class="youre-booked">
             <span class="highlighted">
-              <span class="glyphicon glyphicon-ok-circle"></span>
+              <span class="glyphicon glyphicon-ok-circle font-green"></span>
               <span>You're already booked.</span>
             </span>
           </div>
