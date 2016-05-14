@@ -70,6 +70,9 @@ if (isset($_GET['user_records_id'])){
     <link rel="stylesheet" href="css/trip.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
+    <div id="hotels-json" style="display: none">
+      <?php echo json_encode(travellersInHotel()); ?>
+    </div>
     <header class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">

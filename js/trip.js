@@ -4,6 +4,7 @@ $(function() {
   var bookingAPIData = {};
   var availableHotels = [];
   var eventsAPIData = [];
+  var bookedHotels = [];
 
   const dollarShillingRate = 100.70;
   const location = 'nairobi';
@@ -58,6 +59,10 @@ $(function() {
     return moment(date.local).calendar()
   });
 
+  Handlebars.registerHelper('countPeople', function(hotelId) {
+    bookedHotels
+  });
+
   // hotel template
   var hotelSource = $('#hotel-template').html();
   var hotelTemplate = Handlebars.compile(hotelSource);
@@ -95,7 +100,7 @@ $(function() {
       var no = parseInt(hotel.review_score);
       hotel.stars = no;
     });
-    console.log(availableHotels[0].stars)
+
     var html = hotelTemplate({ hotels : availableHotels });
     $('#listed-properties ul').html(html);
   });
