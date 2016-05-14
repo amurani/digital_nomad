@@ -126,4 +126,14 @@ $(function() {
 
   $('#what a').eq(0).click();
 
+  var booked = window.location.href.match(/hotel_id/).length
+  if (booked) {
+    swal({
+      title: "Your good 👍",
+      text: "Your booking was successful. We're looking foward to seing you on the trip :) !!!",
+      confirmButtonColor: "#2ecc71",
+      type: "success"
+    });
+  }
+
 });

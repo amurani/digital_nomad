@@ -4,3 +4,4 @@
 <script src="js/libs/Vibrant.min.js" charset="utf-8"></script>
 <script src="js/libs/moment.js" charset="utf-8"></script>
 <script src="js/libs/jquery.simplePagination.js" charset="utf-8"></script>
+<script src="js/libs/sweetalert.min.js" charset="utf-8"></script>

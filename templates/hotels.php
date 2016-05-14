@@ -22,7 +22,7 @@
     </div>
     <div class="property-content">
       <h3>{{ name }}</h3>
-      <p>in the <span class="dashed">{{address}}</span> neighbourood of <span class="dashed">{{city}}</span></p>
+      <p>in the <span class="">{{address}}</span> neighbourood of <span class="">{{city}}</span></p>
       <p class="font-big">{{getNumberOfRooms rooms}} rooms available</p>
       <div class="rating">
         {{{getRating stars}}}
