@@ -103,17 +103,8 @@ if (isset($_GET['user_records_id'])){
               <span class="glyphicon glyphicon-ok-circle"></span>
               <span>You're already booked.</span>
             </span>
-            <br>
-            <a class="font-white highlighted" href="
-            <?php
-              $userID = $_SESSION['userID'];
-              if (gethostname() == "Kevins-MacBook-Pro.local") {
-                $url = get_base_url()."trip.php?user_records_id={$userID}";
-              } else {
-                $url = get_base_url()."trip.php?user_records_id={$userID}";
-              }
-             ?>">View my accomodation &#187;</a>
           </div>
+          <a class="cta" href="#listed-properties">Join the trip</a>
           <?php
             } else {
           ?>
