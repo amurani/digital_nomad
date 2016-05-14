@@ -17,24 +17,39 @@ confirm_logged_in();
     <link rel="stylesheet" href="css/trip.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
+    <header class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-target="#nav" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <nav id="nav" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="logout.php">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="jumbotron">
+      <img id="stamp" src="img/stamp.png" alt="" />
       <div class="container font-white">
-        <h1>We're going to Nairobi</h1>
-        <h3>20th - 24th of June</h3>
+        <h1><span class="highlighted">We're going to Nairobi !!!</span></h1>
+        <h3><span class="highlighted">20th - 24th of June</span></h3>
         <a class="cta" href="#">Join the trip</a>
         <div class="youre-booked">
-          <span class="glyphicon glyphicon-ok-circle"></span>
-          <span>You're already booked.</span>
+          <span class="glyphicon glyphicon-ok-circle highlighted"></span>
+          <span class="highlighted">You're already booked.</span>
           <br>
-          <a class="font-white" href="#">View my accomodation &#187;</a>
+          <a class="font-white highlighted" href="#">View my accomodation &#187;</a>
         </div>
       </div>
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-5" id="places of interest">
-          Places of interest
-        </div>
         <div class="col-md-7" id="hotel-listings">
 
           <!-- Display where other people are staying -->
@@ -71,6 +86,11 @@ confirm_logged_in();
             </ul>
           </div>
 
+        </div>
+
+        <!-- Places of interest -->
+        <div class="col-md-5" id="places of interest">
+          Places of interest
         </div>
       </div>
     </div>

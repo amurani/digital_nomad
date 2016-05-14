@@ -17,7 +17,7 @@
 <script type="text/x-handlebars-template" id="hotel-template">
   {{#each hotels}}
   <li class="listed-property clearfix">
-    <div class="property-image pull-left">
+    <div class="property-image">
       <img src="{{getHotelPhoto photos}}" />
     </div>
     <div class="property-content">

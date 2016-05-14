@@ -29,7 +29,7 @@ if (isset($_POST['submit'])){
     }
 
     $row = mysqli_fetch_assoc($result);
-    
+
     $dbuserID = $row['id'];
     $dbusername = $row['username'];
     $dbpassword = $row['password'];

@@ -1,13 +1,28 @@
 .jumbotron {
   background-image: url(../img/places/nairobi.jpg);
-  min-height: 300px;
   background-position: bottom;
   background-size: cover;
+  min-height: 300px;
+  position: relative;
 }
 
-.jumbotron .highlight {
-  background-color: rgba(0, 0, 0, .5);
-  display: inline-block;
+.jumbotron img#stamp {
+  bottom: 10px;
+  height: 200px;
+  position: absolute;
+  right: 10px;
+  transform: rotate(340deg);
+  width: auto;
+  -webkit-filter: brightness(4);
+}
+
+.jumbotron h1,
+.jumbotron h3 {
+  transform: rotate(358deg);
+}
+
+.jumbotron h3 {
+  margin-bottom: 20px;
 }
 
 .youre-booked {
@@ -50,26 +65,25 @@
 #listed-properties .listed-property {
   background-color: #fff;
   border: 1px solid #d3d3d3;
-  border-bottom: none;
-}
-
-#listed-properties .listed-property:last-child {
-  border-bottom: 1px solid #d3d3d3;
+  margin-bottom: 10px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
 }
 
 #listed-properties .listed-property .property-image {
   background-color: #566d85;
   display: inline-block;
-  width: 300px;
-}
-
-#listed-properties .listed-property .property-image {
-  width: 300px;
+  position: absolute;
+  width: auto;
 }
 
 #listed-properties .listed-property .property-content {
+  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, .5) 20%, #fff 40%);
+  height: 100%;
   padding: 0 10px;
-  margin-left: 300px;
+  padding-left: 310px;
+  position: absolute;
 }
 
 #listed-properties .loading {
@@ -80,5 +94,23 @@
 
 .avialable-room-details {
   border-bottom: 1px solid #ccc;
+  min-height: 320px;
+  position: relative;
+}
+
+.avialable-room-details .room-image {
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.avialable-room-details .room-details {
+  background-image: linear-gradient(transparent, #fff 32%);
   padding: 10px;
+  padding-top: 120px;
+  position: absolute;
+  width: 100%;
 }

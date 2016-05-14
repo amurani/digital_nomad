@@ -4,6 +4,8 @@ $(function() {
   var bookingAPIData = {};
   var availableHotels = [];
 
+  const dollarShillingRate = 100.70;
+
   var popularListing = $('.popular-property').parent();
   $('#popular-properties .row').append( popularListing.clone() );
   $('#popular-properties .row').append( popularListing.clone() );
@@ -26,6 +28,11 @@ $(function() {
     return roomBedding.beds.length;
   });
 
+  Handlebars.registerHelper('getPriceInShillings', function(priceInDollars) {
+    var priceInShillings = priceInDollars * dollarShillingRate;
+    return priceInShillings.toLocaleString();
+  });
+
   // hotel template
   var hotelSource = $('#hotel-template').html();
   var hotelTemplate = Handlebars.compile(hotelSource);
@@ -41,7 +48,9 @@ $(function() {
     var roomsData = hotelData.rooms;
     roomsData.forEach(function(room) {
       room.beddingDetails = room.bedding.beds;
+      room.hotelImage = hotelData.photos[0].url_original;
     });
+    console.log(roomsData);
     var html = roomTemplate({ rooms: roomsData });
     $('#available-rooms>ul').html( html );
     $('#view-rooms-modal').modal();
