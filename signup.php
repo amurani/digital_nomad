@@ -19,7 +19,7 @@ if (isset($_POST['submit'])){
     $username = strtolower($username);
     $password = mysqli_real_escape_string($connection, $password );
 
-    //get credentials from database
+    //insert credentials to database
     $query = "INSERT INTO users (username, password) VALUE ('{$username}', '{$password}')";
     $result = mysqli_query($connection, $query);
 
