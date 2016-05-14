@@ -86,27 +86,36 @@ if (isset($_POST['submit'])){
     <!-- <h2 class="highlighted font-white" style="margin: 50px 0; transform: rotate(358deg);">Where group travel happens !!!</h2> -->
 
     <div class="text-center">
-      <h2 class="font-white">Join our group on our next journey</h2>
+      <h1 class="font-white">
+        <span class="">Join our group on our next journey</span>
+      </h1>
     </div>
 
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
-        <div class="login">
-          <div class="login-triangle"></div>
-          <div class="form-tabs">
-            <h2 class="login-header">Log in</h2>
-            <form class="login-container" action="login.php" method="post">
-              <p><input type="text" placeholder="Username" name="username"></p>
-              <p><input type="password" placeholder="Password" name="password"></p>
-              <p class="text-right"><input type="submit" name="submit" value="Log in"></p>
-            </form>
-
-            <h2 class="login-header">Sign Up</h2>
-            <form class="login-container" action="signup.php" method="post">
-              <p><input type="text" placeholder="Username" name="username"></p>
-              <p><input type="password" placeholder="Password" name="password"></p>
-              <p class="text-right"><input type="submit" name="submit" value="Sign Up"></p>
-            </form>
+        <div id="user-form">
+          <div class="form-tabs text-center">
+            <a href="#">Log In</a>
+            <a href="#">Sign Up</a>
+          </div>
+          <div class="login">
+            <div class="login-triangle"></div>
+            <div id="sign-in">
+              <!-- <h2 class="login-header">Log in</h2> -->
+              <form class="login-container" action="login.php" method="post">
+                <p><input type="text" placeholder="Username" name="username"></p>
+                <p><input type="password" placeholder="Password" name="password"></p>
+                <p class="text-center"><input type="submit" name="submit" value="Log in"></p>
+              </form>
+            </div>
+            <div id="sign-up">
+              <!-- <h2 class="login-header">Sign Up</h2> -->
+              <form class="login-container" action="signup.php" method="post">
+                <p><input type="text" placeholder="Username" name="username"></p>
+                <p><input type="password" placeholder="Password" name="password"></p>
+                <p class="text-center"><input type="submit" name="submit" value="Sign Up"></p>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -137,6 +146,23 @@ if (isset($_POST['submit'])){
       //   console.log(backgroundImage);
       //   $('body').css('background', backgroundImage);
       // });
+
+      $('.form-tabs a').click(function() {
+        $('.form-tabs a').removeClass('active');
+        $(this).addClass('active');
+      });
+
+      $('.form-tabs a').eq(0).click(function() {
+        $('#sign-in').show();
+        $('#sign-up').hide();
+      });
+
+      $('.form-tabs a').eq(1).click(function() {
+        $('#sign-in').hide();
+        $('#sign-up').show();
+      });
+
+      $('.form-tabs a').eq(0).click();
 
     });
   </script>
