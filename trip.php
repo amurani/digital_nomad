@@ -117,11 +117,11 @@ if (isset($_GET['user_records_id'])){
 
     <div id="what">
       <div class="text-center">
-        <a href="#">
+        <a href="#listed-properties">
           <span class="glyphicon glyphicon-bed"></span>
           <span>Accomodations</span>
         </a>
-        <a href="#">
+        <a href="#places-of-interest">
           <span class="glyphicon glyphicon-time"></span>
           <span>Activities</span>
         </a>
@@ -130,7 +130,7 @@ if (isset($_GET['user_records_id'])){
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-7" id="hotel-listings">
+        <div class="col-md-8 col-md-offset-2" id="hotel-listings">
 
           <!-- Display where other people are staying -->
           <!-- <div id="popular-properties">
@@ -140,11 +140,9 @@ if (isset($_GET['user_records_id'])){
             </div>
           </div> -->
 
-          <!-- Booking -->
-          <h3>Find a place that suit you ...</h3>
 
           <!-- Filter results to travellers needs -->
-          <div id="listed-properties-filters">
+          <!-- <div id="listed-properties-filters">
             <div class="text-center">
               <a href="#">Would you like to filter these listings?</a>
             </div>
@@ -154,10 +152,11 @@ if (isset($_GET['user_records_id'])){
                 <input class="form-control" type="text" name="name" value="">
               </div>
             </form>
-          </div>
+          </div> -->
 
           <!-- Find your own place -->
           <div id="listed-properties">
+            <h3>Find a place that suit you ...</h3>
             <ul class="list-unstyled">
               <?php include 'templates/hotels.php' ?>
               <li class="loading text-center">
@@ -169,7 +168,7 @@ if (isset($_GET['user_records_id'])){
         </div>
 
         <!-- Places of interest -->
-        <div class="col-md-5" id="places of interest">
+        <div class="col-md-8 col-md-offset-2" id="places-of-interest">
           <h3>Here's stuff we could do ...</h3>
           <div id="city-events">
             <ul class="list-unstyled">

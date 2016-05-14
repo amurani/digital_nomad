@@ -31,7 +31,7 @@ body {
     linear-gradient(limegreen, transparent),
 	  linear-gradient(90deg, skyblue, transparent),
 	  linear-gradient(-90deg, #31a8e6, transparent);*/
-  background-image: url(../img/places/nairobi.jpg);
+  background-image: url(../img/nairobi.jpg);
   /*background-blend-mode: screen;*/
   background-size: cover;
   font-family: 'Open Sans', sans-serif;

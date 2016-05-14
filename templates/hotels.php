@@ -23,9 +23,9 @@
     <div class="property-content">
       <h3 class="font-green">{{ name }}</h3>
       <p>in the <span class="dashed">{{address}}</span> neighbourood of <span class="dashed">{{city}}</span></p>
-      <div class="text-right">
-        <p class="font-big">{{getNumberOfRooms rooms}} rooms available</p>
-        <a class="btn btn-success view-rooms" href="#" data-hotel-id="{{hotel_id}}">
+      <p class="font-big">{{getNumberOfRooms rooms}} rooms available</p>
+      <div >
+        <a class="btn btn-success" href="#" data-hotel-id="{{hotel_id}}">
           <span class="glyphicon glyphicon-bed"></span>
           <span>View Rooms</span>
         </a>

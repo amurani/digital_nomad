@@ -82,31 +82,32 @@ if (isset($_POST['submit'])){
 
   ?>
   <div class="container">
-    <h1 class="highlighted font-red" style="margin: 50px 0; transform: rotate(358deg);">Holiday</h1>
-    <h2 class="highlighted font-white" style="margin: 50px 0; transform: rotate(358deg);">Where group travel happens !!!</h2>
+    <!-- <h1 class="highlighted font-red" style="margin: 50px 0; transform: rotate(358deg);">Holiday</h1> -->
+    <!-- <h2 class="highlighted font-white" style="margin: 50px 0; transform: rotate(358deg);">Where group travel happens !!!</h2> -->
+
+    <div class="text-center">
+      <h2 class="font-white">Join our group on our next journey</h2>
+    </div>
+
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 col-md-offset-3">
         <div class="login">
           <div class="login-triangle"></div>
-          <h2 class="login-header">Log in</h2>
-          <form class="login-container" action="login.php" method="post">
-            <p><input type="text" placeholder="Username" name="username"></p>
-            <p><input type="password" placeholder="Password" name="password"></p>
-            <p class="text-right"><input type="submit" name="submit" value="Log in"></p>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="login">
-          <div class="login-triangle"></div>
+          <div class="form-tabs">
+            <h2 class="login-header">Log in</h2>
+            <form class="login-container" action="login.php" method="post">
+              <p><input type="text" placeholder="Username" name="username"></p>
+              <p><input type="password" placeholder="Password" name="password"></p>
+              <p class="text-right"><input type="submit" name="submit" value="Log in"></p>
+            </form>
 
-          <h2 class="login-header">Sign Up</h2>
-
-          <form class="login-container" action="signup.php" method="post">
-            <p><input type="text" placeholder="Username" name="username"></p>
-            <p><input type="password" placeholder="Password" name="password"></p>
-            <p class="text-right"><input type="submit" name="submit" value="Sign Up"></p>
-          </form>
+            <h2 class="login-header">Sign Up</h2>
+            <form class="login-container" action="signup.php" method="post">
+              <p><input type="text" placeholder="Username" name="username"></p>
+              <p><input type="password" placeholder="Password" name="password"></p>
+              <p class="text-right"><input type="submit" name="submit" value="Sign Up"></p>
+            </form>
+          </div>
         </div>
       </div>
     </div>
