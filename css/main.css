@@ -67,6 +67,14 @@ body {
   text-decoration: none;
 }
 
+.navbar-default .navbar-nav>li>a {
+  color: #31a8e6;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #e74c3c;
+}
+
 /*Forms*/
 .form-inline label {
   display: block;

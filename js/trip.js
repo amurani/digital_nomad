@@ -4,6 +4,8 @@ $(function() {
   var bookingAPIData = {};
   var availableHotels = [];
 
+  const dollarShillingRate = 100.70;
+
   var popularListing = $('.popular-property').parent();
   $('#popular-properties .row').append( popularListing.clone() );
   $('#popular-properties .row').append( popularListing.clone() );
@@ -24,6 +26,11 @@ $(function() {
 
   Handlebars.registerHelper('getRoomBedNumber', function(roomBedding) {
     return roomBedding.beds.length;
+  });
+
+  Handlebars.registerHelper('getPriceInShillings', function(priceInDollars) {
+    var priceInShillings = priceInDollars * dollarShillingRate;
+    return priceInShillings.toLocaleString();
   });
 
   // hotel template

@@ -75,15 +75,14 @@
   background-color: #566d85;
   display: inline-block;
   position: absolute;
-  right: 0;
   width: auto;
 }
 
 #listed-properties .listed-property .property-content {
-  background-image: linear-gradient(270deg, transparent, rgba(255, 255, 255, .5) 20%, #fff 40%);
+  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, .5) 20%, #fff 40%);
   height: 100%;
   padding: 0 10px;
-  padding-right: 310px;
+  padding-left: 310px;
   position: absolute;
 }
 

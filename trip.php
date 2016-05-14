@@ -17,6 +17,23 @@ confirm_logged_in();
     <link rel="stylesheet" href="css/trip.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
+    <header class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-target="#nav" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <nav id="nav" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="logout.php">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="jumbotron">
       <img id="stamp" src="img/stamp.png" alt="" />
       <div class="container font-white">
