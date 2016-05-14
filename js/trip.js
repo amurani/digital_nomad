@@ -147,7 +147,6 @@ $(function() {
 
   $('#social').pisocials({
     services: [
-      "facebookShare",
       "facebookLike",
       '<a href="http://www.jqueryscript.net/tags.php?/twitter/">twitter</a>',
       "googleplus"

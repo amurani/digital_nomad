@@ -85,10 +85,9 @@ if (isset($_POST['submit'])){
     <!-- <h1 class="highlighted font-red" style="margin: 50px 0; transform: rotate(358deg);">Holiday</h1> -->
     <!-- <h2 class="highlighted font-white" style="margin: 50px 0; transform: rotate(358deg);">Where group travel happens !!!</h2> -->
 
-    <div class="text-center">
-      <h1 class="font-white">
-        <span class="">Join our group on our next journey</span>
-      </h1>
+    <div class="text-center font-white">
+      <h1 style="margin-bottom: 0px;">A place for people travelling together</h1>
+      <h2 style="margin-top: 0px;">Join our group on our next journey</h2>
     </div>
 
     <div class="row">
