@@ -13,4 +13,19 @@ function getUser($username, $password){
     }
 }
 
+
+function checkBookingStatus($userID){
+    global $connection;
+    $query = "SELECT * FROM booking WHERE user_id = '{$userID}' LIMIT 1";
+    $result = mysqli_query($connection, $query);
+    
+    if (!$result){
+        die ("Could not connect to the database" . mysqli_error($connection));
+    }
+    $countRows = mysqli_num_rows($result);
+    
+    //already booked
+    if ($countRows == 1)
+        return true;
+}
 ?>
