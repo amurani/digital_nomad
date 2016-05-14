@@ -59,34 +59,55 @@ if (isset($_POST['submit'])){
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/login.css">
+  <head>
+      <meta charset="UTF-8">
+      <title>Login</title>
+      <link rel="stylesheet" href="css/login.css">
 
-</head>
-<body>
-<?php
+  </head>
+  <body>
+  <?php
 
-    if (isset($errorMessage)){
-        echo "<p>" . $errorMessage . "</p>";
-        if (isset($logout_message)){
-            echo "<p>" . $logout_message . "</p>";
+      if (isset($errorMessage)){
+          echo "<p>" . $errorMessage . "</p>";
+          if (isset($logout_message)){
+              echo "<p>" . $logout_message . "</p>";
+          }
+      }
+
+  ?>
+  <div class="login">
+    <div class="login-triangle"></div>
+    <h2 class="login-header">Log in</h2>
+
+    <form class="login-container" action="login.php" method="post">
+      <p><input type="text" placeholder="Username" name="username"></p>
+      <p><input type="password" placeholder="Password" name="password"></p>
+      <p><input type="submit" name="submit" value="Log in"></p>
+    </form>
+  </div>
+
+  <!-- Javascript Assets -->
+  <?php include 'includes/javascript.php' ?>
+  <script type="text/javascript">
+    $(function() {
+
+      var img = document.createElement('img');
+      img.setAttribute('src', 'img/places/nairobi.jpg');
+      img.addEventListener('load', function() {
+        var vibrant = new Vibrant(img);
+        var swatches = vibrant.swatches();
+        var colors = [];
+        var angles = ['to bottom', '90deg', '-90deg', 'to top', '45deg'];
+        for (var swatch in swatches)
+        if (swatches.hasOwnProperty(swatch) && swatches[swatch]) {
+          var rgb = swatches[swatch].getRgb();
+          colors.push( 'rgb(' + rgb[0] + ', ' + rgb[1] + ', ' + rgb[2] + ')' );
         }
-    }
+        console.log(colors);
+      });
 
-?>
-<div class="login">
-  <div class="login-triangle"></div>
-
-  <h2 class="login-header">Log in</h2>
-
-  <form class="login-container" action="login.php" method="post">
-    <p><input type="text" placeholder="Username" name="username"></p>
-    <p><input type="password" placeholder="Password" name="password"></p>
-    <p><input type="submit" name="submit" value="Log in"></p>
-  </form>
-</div>
-
-</body>
+    });
+  </script>
+  </body>
 </html>
