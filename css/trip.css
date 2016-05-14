@@ -7,6 +7,8 @@
   height: 414px;
   overflow: hidden;
   position: relative;
+
+  margin-bottom: 0;
 }
 
 .jumbotron img#stamp {
@@ -68,6 +70,16 @@
 
 .popular-property a {
   font-size: small;
+}
+
+#what {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+#what a {
+  display: inline-block;
+  padding: 20px;
 }
 
 #listed-properties-filters {
