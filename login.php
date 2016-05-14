@@ -67,8 +67,8 @@ if (isset($_POST['submit'])){
   <head>
       <meta charset="UTF-8">
       <title>Login</title>
+      <?php include 'includes/stylesheets.php' ?>
       <link rel="stylesheet" href="css/login.css">
-
   </head>
   <body>
   <?php
@@ -81,15 +81,35 @@ if (isset($_POST['submit'])){
       }
 
   ?>
-  <div class="login">
-    <div class="login-triangle"></div>
-    <h2 class="login-header">Log in</h2>
+  <div class="container">
+    <h1 class="highlighted font-red" style="margin: 50px 0; transform: rotate(358deg);">Holiday</h1>
+    <h2 class="highlighted font-white" style="margin: 50px 0; transform: rotate(358deg);">Where group travel happens !!!</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="login">
+          <div class="login-triangle"></div>
+          <h2 class="login-header">Log in</h2>
+          <form class="login-container" action="login.php" method="post">
+            <p><input type="text" placeholder="Username" name="username"></p>
+            <p><input type="password" placeholder="Password" name="password"></p>
+            <p class="text-right"><input type="submit" name="submit" value="Log in"></p>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="login">
+          <div class="login-triangle"></div>
 
-    <form class="login-container" action="login.php" method="post">
-      <p><input type="text" placeholder="Username" name="username"></p>
-      <p><input type="password" placeholder="Password" name="password"></p>
-      <p><input type="submit" name="submit" value="Log in"></p>
-    </form>
+          <h2 class="login-header">Sign Up</h2>
+
+          <form class="login-container" action="signup.php" method="post">
+            <p><input type="text" placeholder="Username" name="username"></p>
+            <p><input type="password" placeholder="Password" name="password"></p>
+            <p class="text-right"><input type="submit" name="submit" value="Sign Up"></p>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Javascript Assets -->
@@ -97,20 +117,25 @@ if (isset($_POST['submit'])){
   <script type="text/javascript">
     $(function() {
 
-      var img = document.createElement('img');
-      img.setAttribute('src', 'img/places/nairobi.jpg');
-      img.addEventListener('load', function() {
-        var vibrant = new Vibrant(img);
-        var swatches = vibrant.swatches();
-        var colors = [];
-        var angles = ['to bottom', '90deg', '-90deg', 'to top', '45deg'];
-        for (var swatch in swatches)
-        if (swatches.hasOwnProperty(swatch) && swatches[swatch]) {
-          var rgb = swatches[swatch].getRgb();
-          colors.push( 'rgb(' + rgb[0] + ', ' + rgb[1] + ', ' + rgb[2] + ')' );
-        }
-        console.log(colors);
-      });
+      // var img = document.createElement('img');
+      // img.setAttribute('src', 'img/places/nairobi.jpg');
+      // img.addEventListener('load', function() {
+      //   var vibrant = new Vibrant(img);
+      //   var swatches = vibrant.swatches();
+      //   var colors = [];
+      //   var angles = ['to bottom', '90deg', '-90deg', 'to top', '45deg', '0deg'];
+      //   var backgroundImage = '';
+      //   for (var swatch in swatches) {
+      //     if (swatches.hasOwnProperty(swatch) && swatches[swatch]) {
+      //       var rgb = swatches[swatch].getRgb();
+      //       colors.push( 'rgb(' + rgb[0] + ', ' + rgb[1] + ', ' + rgb[2] + ')' );
+      //       backgroundImage += 'linear-gradient(' + angles[colors.length] + ', ' + colors[colors.length - 1] + ', transparent), ';
+      //     }
+      //   }
+      //   backgroundImage = backgroundImage.substring(0, backgroundImage.length - 2);
+      //   console.log(backgroundImage);
+      //   $('body').css('background', backgroundImage);
+      // });
 
     });
   </script>

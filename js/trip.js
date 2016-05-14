@@ -58,7 +58,8 @@ $(function() {
 
   // get the hotels in the trip location
   // $.getJSON('http://10.62.0.180:3000/hotels\?city\=Nairobi\&checkin\=2016-08-04\&checkout\=2016-08-15', function(data) {
-  $.getJSON('http://localhost/digital_nomad/data/hotels.json', function(data) {
+  // $.getJSON('http://localhost/digital_nomad/data/hotels.json', function(data) {
+  $.getJSON('http://localhost:8000/digital_nomad/data/hotels.json', function(data) {
     bookingAPIData = data;
     availableHotels = bookingAPIData.hotels;
 

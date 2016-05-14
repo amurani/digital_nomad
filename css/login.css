@@ -21,13 +21,23 @@
 /* 'Open Sans' font from Google Fonts */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+html {
+  height: 100%;
+}
+
 body {
-  background: #456;
+  /*background: #456;*/
+  /*background:
+    linear-gradient(limegreen, transparent),
+	  linear-gradient(90deg, skyblue, transparent),
+	  linear-gradient(-90deg, #31a8e6, transparent);*/
+  background-image: url(../img/places/nairobi.jpg);
+  /*background-blend-mode: screen;*/
+  background-size: cover;
   font-family: 'Open Sans', sans-serif;
 }
 
 .login {
-  width: 400px;
   margin: 16px auto;
   font-size: 16px;
 }
@@ -45,11 +55,15 @@ body {
   margin-right: auto;
   margin-left: auto;
   border: 12px solid transparent;
-  border-bottom-color: #28d;
+  /*border-bottom-color: #28d;*/
+  border-bottom-color: #0fe2b8;
 }
 
 .login-header {
-  background: #28d;
+  /*background: #28d;*/
+  background: #0fe2b8;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
   padding: 20px;
   font-size: 1.4em;
   font-weight: normal;
@@ -59,7 +73,9 @@ body {
 }
 
 .login-container {
-  background: #ebebeb;
+  background: #fff;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   padding: 12px;
 }
 
@@ -96,8 +112,12 @@ body {
 .login input[type="submit"] {
   background: #28d;
   border-color: transparent;
+  border-radius: 2px;
+  display: inline-block;
   color: #fff;
   cursor: pointer;
+  padding: 16px 32px;
+  width: auto;
 }
 
 .login input[type="submit"]:hover {
