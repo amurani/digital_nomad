@@ -89,8 +89,8 @@ $(function() {
   });
 
   // $.getJSON('http://10.62.0.180:3000/events\?city\=Nairob', function(data) {
-  // $.getJSON('http://localhost/digital_nomad/data/events.json', function(data) {
-  $.getJSON('http://localhost:8000/digital_nomad/data/events.json', function(data) {
+   $.getJSON('http://localhost/digital_nomad/data/events.json', function(data) {
+  //$.getJSON('http://localhost:8000/digital_nomad/data/events.json', function(data) {
     eventsAPIData = data;
     var html = eventTemplate({ events: eventsAPIData.events });
     $('#city-events ul').html(html);
