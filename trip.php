@@ -14,21 +14,21 @@ confirm_logged_in();
 //get selected hotel and room from user
 global $connection;
 if (isset($_GET['user_id']) && isset($_GET['hotel_id']) && isset($_GET['room_id'])) {
-    
+
     $userID = $_GET['user_id'];
     $hotelID = $_GET['hotel_id'];
     $roomID = $_GET['room_id'];
-    
+
     //check if user already booked a room.
     $query = "SELECT * FROM booking WHERE user_id={$userID} LIMIT 1";
     $result = mysqli_query($connection, $query);
-    
+
     if (!$result){
         die ("Could not read from booking table" . mysqli_error());
     }
-    
+
     $countRows = mysqli_num_rows($result);
-    
+
     if ($countRows == 0){
         //user has not booked a room yet. insert to db
         $query = "INSERT INTO booking (user_id, hotel_id, room_id) VALUES ($userID, $hotelID, $roomID)";
@@ -36,12 +36,12 @@ if (isset($_GET['user_id']) && isset($_GET['hotel_id']) && isset($_GET['room_id'
 
         if (!$result){
             die ("could not connect to the database" . mysqli_error());
-        } 
+        }
     } else {
         //user has booked a room. generate error message.
         $alreadyBookedMsg = "You have already booked a room";
     }
-      
+
 }
 ?>
 
@@ -76,22 +76,24 @@ if (isset($_GET['user_id']) && isset($_GET['hotel_id']) && isset($_GET['room_id'
       <div class="container font-white">
         <h1><span class="highlighted">We're going to Nairobi !!!</span></h1>
         <h3><span class="highlighted">20th - 24th of June</span></h3>
-        <a class="cta" href="#">Join the trip</a>
+        <?php
+           if (isset($alreadyBookedMsg)){
+        ?>
         <div class="youre-booked">
           <span class="glyphicon glyphicon-ok-circle highlighted"></span>
-          <span class="highlighted"> 
-          <?php  
-             if (isset($alreadyBookedMsg)){
-                 echo "You're already booked.";
-             } else {
-                 echo "Please select a room";
-             }
-              
-           ?>
-          </span>
+          <span class="highlighted">You're already booked.</span>
           <br>
           <a class="font-white highlighted" href="#">View my accomodation &#187;</a>
         </div>
+        <?php
+          } else {
+        ?>
+        <a class="cta" href="#listed-properties">Join the trip</a>
+        <?php
+        }
+        ?>
+
+
       </div>
     </div>
     <div class="container-fluid">
